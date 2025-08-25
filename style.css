@@ -1,3 +1,23 @@
+/*
+
+Выбрать тег для изменения
+.title  class="title'
+
+
+Свойства элемента
+
+color: green; //цвет текста
+font-size: 14px; //размер текста
+background: blue; // цвет фона
+border: 1px solid red; //обводка элемента (толщина, тип линии(сплошная), цвет
+
+*/
+
+
 .title{
-    color: green;
+    color: darkblue;
+    font-size: 24px;
+    background: lightblue;
+    border: 1px solid red; /* обводка*/
+
 }
