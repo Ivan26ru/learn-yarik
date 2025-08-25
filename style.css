@@ -21,3 +21,16 @@ border: 1px solid red; //обводка элемента (толщина, тип
     border: 1px solid red; /* обводка*/
 
 }
+.wwww{
+    color: darkred;
+    font-size: 30px;
+    background: cadetblue;
+    border: 2px solid greenyellow;
+
+}
+.pppp{
+    color: chocolate;
+    font-size: 28px;
+    background: saddlebrown;
+    border: 2px solid sandybrown;
+}
