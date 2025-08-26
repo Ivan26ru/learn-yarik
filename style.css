@@ -34,3 +34,63 @@ border: 1px solid red; //обводка элемента (толщина, тип
     background: saddlebrown;
     border: 2px solid sandybrown;
 }
+.qqqq {
+    color: red;
+    font-size: 30px;
+    background: darkred;
+    border: 3px solid orangered;
+}
+.kkkk{
+    color: aqua;
+    font-size: 26px;
+    background: cadetblue;
+    border: 2px solid beige ;
+}
+.oooo{
+    color: grey;
+    font-size: 27px;
+    background: dimgray;
+    border: 3px solid dimgrey;
+}
+.nnn{
+    color: chartreuse;
+    font-size: 28px;
+    background: black;
+    border:2px solid aliceblue ;
+}
+.vvvv{
+    color: orangered;
+    font-size: 31px;
+    background: chocolate;
+    border: 2px solid red;
+}
+.eee{
+    color: darkred;
+    font-size: 32px;
+    background: crimson;
+    border: 2px solid chartreuse;
+}
+.sssss{
+    color: aliceblue;
+    font-size: 33px;
+    background: azure;
+    border: 4px solid white;
+}
+.fff{
+    color: firebrick;
+    font-size: 26px;
+    background: darkturquoise;
+    border: gold;
+}
+.ghghg{
+    color: floralwhite;
+    font-size: 29px;
+    background: goldenrod;
+    border: 3px solid gold;
+}
+.zzzz {
+    color: goldenrod;
+    font-size: 32px;
+    background: darkcyan;
+    border: deepskyblue;
+}
