@@ -104,3 +104,19 @@ border: 1px solid red; //обводка элемента (толщина, тип
 .menu .menu_active{
 	background-color: lightblue;
 }
+
+
+/* Наследование */
+.parent-block{
+	color:magenta; /* свойство наследуется */
+	border: 1px solid magenta;  /* свойство не наследуется */
+	font-size: 20px; /* свойство наследуется */
+}
+
+.list-left li{
+	color: green;
+}
+
+.list-right li{
+	color: blue;
+}
