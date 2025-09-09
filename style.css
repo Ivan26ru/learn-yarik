@@ -94,3 +94,13 @@ border: 1px solid red; //обводка элемента (толщина, тип
     background: darkcyan;
     border: deepskyblue;
 }
+
+
+.menu a{
+	color: darkcyan;
+	text-decoration: none;
+}
+
+.menu .menu_active{
+	background-color: lightblue;
+}
