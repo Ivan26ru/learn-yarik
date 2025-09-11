@@ -92,6 +92,7 @@ border: 1px solid red; //обводка элемента (толщина, тип
     color: goldenrod;
     font-size: 32px;
     background: darkcyan;
+
     border: deepskyblue;
 }
 
@@ -119,4 +120,8 @@ border: 1px solid red; //обводка элемента (толщина, тип
 
 .list-right li{
 	color: blue;
+}
+.qqqqq{
+    color: orangered;
+
 }
