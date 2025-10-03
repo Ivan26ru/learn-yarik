@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
+
+    <ul>
+        <li><a href="index.html">Главная страница</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a  href="telefon.html">телефон</a> </li>
+    </ul>
 </head>
 <body>
 <form action="#" method="get">
@@ -76,6 +82,50 @@
     <form action="/search" method="get">
         <input type="text" name="query" placeholder="Поиск...">
         <button type="submit">Найти</button>
+        <fieldset>
+            <legend>Личная информация</legend>
+            <label for="firstName">Имя:</label>
+            <input type="text" id="firstName" name="firstName">
+
+            <label for="lastName">Фамилия:</label>
+            <input type="text" id="lastName" name="lastName">
+        </fieldset>
+
+        <br>
+        <button type="button" onclick="doSomething()">Выполнить действие</button>
+        <br>
+        <form action="/search" method="get" role="search">
+            <label for="searchQuery" class="visually-hidden">Поиск по сайту:</label>
+            <input type="search" id="searchQuery" name="q"
+                   placeholder="Что вы ищете?" required>
+            <button type="submit">Найти</button>
+        </form>
+
+    </form>
+    <form action="/login" method="post">
+        <label for="username">Логин:</label>
+        <input type="text" id="username" name="username" required>
+<br>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+<br>
+        <button type="submit">Войти</button>
+        <form action="/contact" method="post">
+            <input type="text" name="name" required placeholder="Имя*">
+            <input type="email" name="email" required placeholder="Email*">
+            <textarea name="message" required placeholder="Сообщение*"></textarea>
+            <button type="submit">Отправить</button>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <label for="fileUpload">Выберите файл:</label>
+                <input type="file" id="fileUpload" name="document"
+                       accept=".pdf,.doc,.docx" required>
+
+                <label for="fileDescription">Описание файла:</label>
+                <textarea id="fileDescription" name="description" rows="3"></textarea>
+
+                <button type="submit">Загрузить файл</button>
+            </form>
+        </form>
     </form>
 </form>
 

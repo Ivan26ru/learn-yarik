@@ -125,3 +125,62 @@ border: 1px solid red; //обводка элемента (толщина, тип
     color: orangered;
 
 }
+form {
+    max-width: 420px; /* Ограничение формы по ширине */
+    margin: 0 auto; /* Выравнивание формы по центру */
+    padding: 20px; /* Внутренние отступы */
+    border: 1px solid #ccc; /* Обводка */
+    border-radius: 5px; /* Скругление */
+}
+
+input, textarea, button {
+    width: 100%; /* Ширина полей */
+    padding: 10px; /* Внутренние отступы */
+    margin: 0 0 10px; /* Отступы между полями */
+    border: 1px solid #ccc; /* Обводка */
+    border-radius: 5px; /* Скругление */
+}
+
+textarea {
+    height: 150px; /* Высота поля */
+    resize: none; /* Запрет на изменение ширины и высоты пользователем */
+}
+
+button {
+    background-color: #4cf50; /* Фоновый цвет */
+    color: #ffffff; /* Цвет текста */
+    cursor: pointer; /* Курсор в виде пальца */
+}
+
+button:hover {
+    opacity: 0.8; /* Прозрачность при наведении */
+}/* Определяем ключевую анимацию: элемент появляется снизу и становится видимым */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Элемент полностью прозрачный в начале */
+        transform: translateY(20px); /* Смещён вниз на 20px */
+    }
+    100% {
+        opacity: 1; /* Полностью видимый */
+        transform: translateY(0); /* Возвращается на своё место */
+    }
+}
+
+.intro {
+    /* Применяем анимацию fadeIn */
+    animation: fadeIn 3s ease-out;
+
+    /* Стили текста */
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 100px;
+    color: #333;
+}
+
+body {
+    background-color: #f5f5f5; /* Светлый фон страницы */
+    margin: 0;
+    padding: 0;
+}
+
