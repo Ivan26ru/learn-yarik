@@ -119,7 +119,7 @@ border: 1px solid red; //обводка элемента (толщина, тип
 }
 
 .list-right li{
-	color: blue;
+	color: yellowgreen;
 }
 .qqqqq{
     color: orangered;
@@ -183,4 +183,7 @@ body {
     margin: 0;
     padding: 0;
 }
+.list-color{
+    color: aquamarine;
 
+}
