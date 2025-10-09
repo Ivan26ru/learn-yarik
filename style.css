@@ -187,3 +187,21 @@ body {
     color: aquamarine;
 
 }
+
+/* FLEX */
+.flex-block{
+	background-color: lightblue;
+	display: flex;
+	padding: 10px;
+	margin: 10px;
+}
+
+.flex-block__item{
+	padding: 10px 50px;
+	border: 1px solid blue;
+	background-color: silver;
+}
+
+.flex-block_end{
+	justify-content: flex-end;
+}
