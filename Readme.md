@@ -21,7 +21,7 @@
   justify-content: space-around;
   justify-content: stretch;
 
--align-items: stretch;
+ - align-items: stretch;
 align-items: center;
 align-items: flex-start;
 align-items: flex-end;
