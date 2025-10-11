@@ -9,12 +9,12 @@
 + сделать 5 списков на одной странице, что бы 3 списка были одним цветом, 
 а другие 2 другим цветом
 + сделать формы для одного дня в дневнике для каждой формы придумать по 3 варианта примера
-- сделать следующие flex примеры:
++ сделать следующие flex примеры:
   flex-wrap: nowrap;
   flex-wrap: wrap;
   flex-wrap: wrap-reverse;
 
-- justify-content: center;
++ justify-content: center;
   justify-content: flex-start;
   justify-content: flex-end;
   justify-content: space-between;
