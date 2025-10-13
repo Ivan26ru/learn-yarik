@@ -205,3 +205,17 @@ body {
 .flex-block_end{
 	justify-content: flex-end;
 }
+.flex-block hgroup{
+    flex-flow: row;
+    flex-flow: row-reverse;
+    flex-flow: column;
+    flex-flow: column-reverse;
+    flex-flow: nowrap;
+    flex-flow: wrap;
+    flex-flow: wrap-reverse;
+    flex-flow: row nowrap;
+    flex-flow: column wrap;
+    flex-flow: column-reverse wrap-reverse;
+    flex-flow: inherit;
+    flex-flow: initial
+}
