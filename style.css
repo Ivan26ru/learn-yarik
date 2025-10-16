@@ -219,3 +219,13 @@ body {
     flex-flow: inherit;
     flex-flow: initial
 }
+.flex-block-html{
+    order: 2;
+}
+.flex-block_end_spawn{
+    order: initial;
+
+}
+.flex-block__end{
+    order: inherit;
+}
