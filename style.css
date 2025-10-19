@@ -229,3 +229,28 @@ body {
 .flex-block__end{
     order: inherit;
 }
+.flex-block_end-item{
+    align-self: auto;
+}
+.flex-block_nowar-end{
+    align-self: center;
+}
+.flex-block_end__item{
+    align-self: flex-start;
+}
+.flex-block_end-start{
+    align-self: flex-end;
+
+}
+.flex-block_end__end{
+    align-self: baseline;
+}
+.flex-block_end--warp{
+    align-self: stretch
+}
+.flex-block_end-warp{
+    align-self: inherit;
+}
+.flex-block_start{
+    align-self: initial;
+}
