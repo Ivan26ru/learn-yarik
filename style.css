@@ -254,3 +254,15 @@ body {
 .flex-block_start{
     align-self: initial;
 }
+.flex-block_end__nowar{
+    flex-grow: 3;
+}
+.flex-block_nowar-end{
+    flex-grow: 0.6;
+}
+.flex-block__start{
+    flex-grow: inherit;
+}
+.flex-block-start{
+    flex-grow: initial;
+}
