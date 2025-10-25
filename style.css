@@ -161,7 +161,6 @@ textarea {
 }
 
 button {
-    background-color: #4cf50; /* Фоновый цвет */
     color: #ffffff; /* Цвет текста */
     cursor: pointer; /* Курсор в виде пальца */
 }
