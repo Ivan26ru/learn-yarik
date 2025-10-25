@@ -14,80 +14,92 @@ border: 1px solid red; //обводка элемента (толщина, тип
 */
 
 
-.title{
+.title {
     color: darkblue;
     font-size: 24px;
     background: lightblue;
     border: 1px solid red; /* обводка*/
 
 }
-.wwww{
+
+.wwww {
     color: darkred;
     font-size: 30px;
     background: cadetblue;
     border: 2px solid black;
 
 }
-.pppp{
+
+.pppp {
     color: chocolate;
     font-size: 28px;
     background: saddlebrown;
     border: 2px solid sandybrown;
 }
+
 .qqqq {
     color: red;
     font-size: 30px;
     background: darkred;
     border: 3px solid orangered;
 }
-.kkkk{
+
+.kkkk {
     color: aqua;
     font-size: 26px;
     background: cadetblue;
-    border: 2px solid beige ;
+    border: 2px solid beige;
 }
-.oooo{
+
+.oooo {
     color: grey;
     font-size: 27px;
     background: dimgray;
     border: 3px solid dimgrey;
 }
-.nnn{
+
+.nnn {
     color: chartreuse;
     font-size: 28px;
     background: black;
-    border:2px solid aliceblue ;
+    border: 2px solid aliceblue;
 }
-.vvvv{
+
+.vvvv {
     color: orangered;
     font-size: 31px;
     background: chocolate;
     border: 2px solid red;
 }
-.eee{
+
+.eee {
     color: darkred;
     font-size: 32px;
     background: crimson;
     border: 2px solid chartreuse;
 }
-.sssss{
+
+.sssss {
     color: aliceblue;
     font-size: 33px;
     background: azure;
     border: 4px solid white;
 }
-.fff{
+
+.fff {
     color: firebrick;
     font-size: 26px;
     background: darkturquoise;
     border: gold;
 }
-.ghghg{
+
+.ghghg {
     color: floralwhite;
     font-size: 29px;
     background: goldenrod;
     border: 3px solid gold;
 }
+
 .zzzz {
     color: goldenrod;
     font-size: 32px;
@@ -97,34 +109,36 @@ border: 1px solid red; //обводка элемента (толщина, тип
 }
 
 
-.menu a{
-	color: darkcyan;
-	text-decoration: none;
+.menu a {
+    color: darkcyan;
+    text-decoration: none;
 }
 
-.menu .menu_active{
-	background-color: lightblue;
+.menu .menu_active {
+    background-color: lightblue;
 }
 
 
 /* Наследование */
-.parent-block{
-	color:magenta; /* свойство наследуется */
-	border: 1px solid magenta;  /* свойство не наследуется */
-	font-size: 20px; /* свойство наследуется */
+.parent-block {
+    color: magenta; /* свойство наследуется */
+    border: 1px solid magenta; /* свойство не наследуется */
+    font-size: 20px; /* свойство наследуется */
 }
 
-.list-left li{
-	color: green;
+.list-left li {
+    color: green;
 }
 
-.list-right li{
-	color: yellowgreen;
+.list-right li {
+    color: yellowgreen;
 }
-.qqqqq{
+
+.qqqqq {
     color: orangered;
 
 }
+
 form {
     max-width: 420px; /* Ограничение формы по ширине */
     margin: 0 auto; /* Выравнивание формы по центру */
@@ -154,7 +168,9 @@ button {
 
 button:hover {
     opacity: 0.8; /* Прозрачность при наведении */
-}/* Определяем ключевую анимацию: элемент появляется снизу и становится видимым */
+}
+
+/* Определяем ключевую анимацию: элемент появляется снизу и становится видимым */
 @keyframes fadeIn {
     0% {
         opacity: 0; /* Элемент полностью прозрачный в начале */
@@ -183,29 +199,31 @@ body {
     margin: 0;
     padding: 0;
 }
-.list-color{
+
+.list-color {
     color: aquamarine;
 
 }
 
 /* FLEX */
-.flex-block{
-	background-color: lightblue;
-	display: flex;
-	padding: 10px;
-	margin: 10px;
+.flex-block {
+    background-color: lightblue;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
 }
 
-.flex-block__item{
-	padding: 10px 50px;
-	border: 1px solid blue;
-	background-color: silver;
+.flex-block__item {
+    padding: 10px 50px;
+    border: 1px solid blue;
+    background-color: silver;
 }
 
-.flex-block_end{
-	justify-content: flex-end;
+.flex-block_end {
+    justify-content: flex-end;
 }
-.flex-block hgroup{
+
+.flex-block hgroup {
     flex-flow: row;
     flex-flow: row-reverse;
     flex-flow: column;
@@ -219,53 +237,69 @@ body {
     flex-flow: inherit;
     flex-flow: initial
 }
-.flex-block-html{
+
+.flex-block-html {
     order: 2;
 }
-.flex-block_end_spawn{
+
+.flex-block_end_spawn {
     order: initial;
 
 }
-.flex-block__end{
+
+.flex-block__end {
     order: inherit;
 }
-.flex-block_end-item{
+
+.flex-block_end-item {
     align-self: auto;
 }
-.flex-block_nowar-end{
+
+.flex-block_nowar-end {
     align-self: center;
 }
-.flex-block_end__item{
+
+.flex-block_end__item {
     align-self: flex-start;
 }
-.flex-block_end-start{
+
+.flex-block_end-start {
     align-self: flex-end;
 
 }
-.flex-block_end__end{
+
+.flex-block_end__end {
     align-self: baseline;
 }
-.flex-block_end--warp{
+
+.flex-block_end--warp {
     align-self: stretch
 }
-.flex-block_end-warp{
+
+.flex-block_end-warp {
     align-self: inherit;
 }
-.flex-block_start{
+
+.flex-block_start {
     align-self: initial;
 }
-.flex-block_end__nowar{
+
+.flex-block_end__nowar {
     flex-grow: 3;
 }
-.flex-block_nowar-end{
+
+.flex-block_nowar-end {
     flex-grow: 0.6;
 }
-.flex-block__start{
+
+.flex-block__start {
     flex-grow: inherit;
 }
-.flex-block-start{
+
+.flex-block-start {
     flex-grow: initial;
 }
-.flex-block_no-wrap{
+
+.flex-block_no-wrap {
     flex-wrap: nowrap;
 }
