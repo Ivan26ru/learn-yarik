@@ -299,6 +299,6 @@ body {
     flex-grow: initial;
 }
 
-.flex-block_no-wrap {
-    flex-wrap: nowrap;
+.flex-block_end {
+    flex-blokc:flex_end ;
 }
