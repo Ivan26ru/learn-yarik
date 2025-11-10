@@ -53,8 +53,22 @@
 		Любой произвольный блок у которого нужно сменить несколько свойств при наведении
 	</div>
 </div>
+<div class="wrap"></div>
+  <span class=" one"> изменится текст  </span>
+<div class="wrap">
+    <span class="me">изменяется цвет</span>
+    <div class="wrap"></div>
+    <span class=" one"> изменится текст  </span>
+    <div class="wrap">
+        <span class="me">изменяется цвет</span>
+        <div class="wrap"></div>
+        <span class=" one"> изменится текст  </span>
+        <div class="wrap">
+            <span class="me">изменяется цвет</span>
 <style>
-	.wrap {
+
+
+    .wrap {
 		background: #BBBBBB;
 		margin: 20px;
 		padding: 20px;
@@ -100,6 +114,24 @@
 		border: 2px solid magenta;
 		border-radius: 20px;
 	}
+    .one{
+        background: yellow;
+        padding: 22px;
+    }
+    .one:hover{
+        background: #333333;
+        color: blue;
+    }
+    .me{
+        background: white;
+        padding: 23px;
+        color: black;
+    }
+    .me:hover{
+        background: black;
+        padding: 19px;
+        color: white;
+    }
 </style>
 </body>
 </html>
