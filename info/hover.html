@@ -1,133 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Эффекты наведения</title>
+    <meta charset="UTF-8">
+    <title>Эффекты наведения</title>
 </head>
 <body>
 <h1>Эффекты наведения</h1>
 <p>Для изменения стиля отображения при наведении указателя
-	мыши на него, необходимо добавить <i>:hover</i> к свойству, например
-	<i>.example:hover{}</i>
+    мыши на него, необходимо добавить <i>:hover</i> к свойству, например
+    <i>.example:hover{}</i>
 </p>
 <p>Это работает для любых блоков и свойств</p>
 
 <div class="wrap">
-	<span class="example1">Изменить цвет текста при наведении</span>
-	<br>
-	<span class="example1">У всего, кто имеет такой класс, будет изменяться цвет текста</span>
+    <span class="example1">Изменить цвет текста при наведении</span>
+    <br>
+    <span class="example1">У всего, кто имеет такой класс, будет изменяться цвет текста</span>
 </div>
 
 <div class="wrap">
-	<p>Изменить фон блока</p>
-	<div class="example-block">Блок у которого меняется фон при наведении курсора мыши</div>
+    <p>Изменить фон блока</p>
+    <div class="example-block">Блок у которого меняется фон при наведении курсора мыши</div>
 </div>
 
 <div class="wrap">
-	<p>Изменить цвет ссылки при наведении</p>
-	<ul>
-		<li><a href="#" class="example-link">Ссылка 1</a></li>
-		<li><a href="#" class="example-link">Ссылка 2</a></li>
-		<li><a href="#" class="example-link">Ссылка 3</a></li>
-	</ul>
+    <p>Изменить цвет ссылки при наведении</p>
+    <ul>
+        <li><a href="#" class="example-link">Ссылка 1</a></li>
+        <li><a href="#" class="example-link">Ссылка 2</a></li>
+        <li><a href="#" class="example-link">Ссылка 3</a></li>
+    </ul>
 </div>
 
 <div class="wrap">
-	<p>Использование в навигационном меню</p>
-	<ul>
-		<li><a class="example-link" href="#">Главная</a></li>
-		<li><a class="example-link example-link_active" href="#">Эффекты наведения</a></li>
-		<li><a class="example-link" href="#">О нас</a></li>
-	</ul>
+    <p>Использование в навигационном меню</p>
+    <ul>
+        <li><a class="example-link" href="#">Главная</a></li>
+        <li><a class="example-link example-link_active" href="#">Эффекты наведения</a></li>
+        <li><a class="example-link" href="#">О нас</a></li>
+    </ul>
 </div>
 
 <div class="wrap">
-	<p>Изменения набора свойств стилей</p>
-	<div class="example-custom-block">
-		Любой произвольный блок у которого нужно сменить несколько свойств при наведении
-	</div>
-	<div class="example-custom-block">
-		Любой произвольный блок у которого нужно сменить несколько свойств при наведении
-	</div>
-	<div class="example-custom-block example-custom-block_hover">
-		Любой произвольный блок у которого нужно сменить несколько свойств при наведении
-	</div>
+    <p>Изменения набора свойств стилей</p>
+    <div class="example-custom-block">
+        Любой произвольный блок у которого нужно сменить несколько свойств при наведении
+    </div>
+    <div class="example-custom-block">
+        Любой произвольный блок у которого нужно сменить несколько свойств при наведении
+    </div>
+    <div class="example-custom-block example-custom-block_hover">
+        Любой произвольный блок у которого нужно сменить несколько свойств при наведении
+    </div>
 </div>
-<div class="wrap"></div>
-  <span class=" one"> изменится текст  </span>
 <div class="wrap">
-    <span class="me">изменяется цвет</span>
-    <div class="wrap"></div>
     <span class=" one"> изменится текст  </span>
-    <div class="wrap">
-        <span class="me">изменяется цвет</span>
-        <div class="wrap"></div>
-        <span class=" one"> изменится текст  </span>
-        <div class="wrap">
-            <span class="me">изменяется цвет</span>
+
+    <span class="me">изменяется цвет</span>
+
+
+    <span class=" one"> изменится текст  </span>
+
+    <span class="me">изменяется цвет</span>
+
+    <span class=" one"> изменится текст  </span>
+
+    <span class="me">изменяется цвет</span>
+</div>
 <style>
 
 
     .wrap {
-		background: #BBBBBB;
-		margin: 20px;
-		padding: 20px;
-	}
+        background: #BBBBBB;
+        margin: 20px;
+        padding: 20px;
+    }
 
-	.example1:hover {
-		color: red;
-	}
+    .example1:hover {
+        color: red;
+    }
 
-	.example-block {
-		background: green;
-		padding: 20px;
-	}
+    .example-block {
+        background: green;
+        padding: 20px;
+    }
 
-	.example-block:hover {
-		background: blue;
-		color: white;
-	}
+    .example-block:hover {
+        background: blue;
+        color: white;
+    }
 
-	.example-link {
-		text-decoration: none;
-		font-size: 24px;
-	}
+    .example-link {
+        text-decoration: none;
+        font-size: 24px;
+    }
 
-	.example-link:hover {
-		color: yellow;
-	}
+    .example-link:hover {
+        color: yellow;
+    }
 
-	.example-link_active {
-		color: purple;
-	}
+    .example-link_active {
+        color: purple;
+    }
 
-	.example-custom-block {
-		background: white;
-	}
+    .example-custom-block {
+        background: white;
+    }
 
-	/* Объединил стили для наведения и для статичного свойство */
-	.example-custom-block:hover,
-	.example-custom-block_hover {
-		background: black;
-		color: white;
-		padding: 20px;
-		border: 2px solid magenta;
-		border-radius: 20px;
-	}
-    .one{
+    /* Объединил стили для наведения и для статичного свойство */
+    .example-custom-block:hover,
+    .example-custom-block_hover {
+        background: black;
+        color: white;
+        padding: 20px;
+        border: 2px solid magenta;
+        border-radius: 20px;
+    }
+
+    .one {
         background: yellow;
         padding: 22px;
     }
-    .one:hover{
+
+    .one:hover {
         background: #333333;
         color: blue;
     }
-    .me{
+
+    .me {
         background: white;
         padding: 23px;
         color: black;
     }
-    .me:hover{
+
+    .me:hover {
         background: black;
         padding: 19px;
         color: white;
