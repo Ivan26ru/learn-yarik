@@ -298,6 +298,9 @@ body {
 .flex-block-start {
     flex-grow: initial;
 }
+.flex-end{
+    justify-content: flex-end;
+}
 .wrap{
     border: 1px solid silver ;
 
