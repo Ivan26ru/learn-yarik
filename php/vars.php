@@ -1,9 +1,7 @@
 <?php
 
 
-$a = 1;
-$b = 2;
-
-$c = $a + $b;
-
-echo $c;
+$dlina = 7;
+$shirina = 5;
+$S = $dlina * $shirina;
+echo $S;
