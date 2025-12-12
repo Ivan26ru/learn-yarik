@@ -14,5 +14,5 @@ function plowabi(int $a, int $b)
     return $plowabi;
 }
 
-echo plowabi(5, 9) . "<br>";
+echo plowabi(5, 99546854769856869) . "<br>";
 echo plowabi(9032, 398);
