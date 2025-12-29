@@ -15,4 +15,19 @@ function plowabi(int $a, int $b)
 }
 
 echo plowabi(5, 99546854769856869) . "<br>";
-echo plowabi(9032, 398);
+echo plowabi(55,73 );
+
+function bcegopatronob(int $a, int $b)
+{
+ $bcegopatronob = ($a * $b);
+ return $bcegopatronob;
+}
+
+echo bcegopatronob(3,25) . "<br>";
+
+function treygolinlk(int $a, int $b, int $c)
+{
+ $treygolinlk = ($a + $b + $c);
+ return $treygolinlk;
+}
+echo treygolinlk(10,56, 10) . "<br>";
