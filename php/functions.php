@@ -31,3 +31,11 @@ function treygolinlk(int $a, int $b, int $c)
  return $treygolinlk;
 }
 echo treygolinlk(10,56, 10) . "<br>";
+
+
+function bcegodeneg(int $a, int $b, int $c, int $d)
+{
+   bcegodeneg($a + $d + $c + $d)
+   return $bcegodeneg;
+)
+echo$bcegodeneg(600, 512, 903, 493) . "<br>";

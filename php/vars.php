@@ -36,4 +36,12 @@ function plowabi (int $a, int $b)
   return $plowabi;
 }
 echo plowabi(5,9) . "<br>";
- echo plowabi(9032,398);
+ echo plowabi(9032,398)."<br>" ;
+
+ $oneyuslo = 356;
+ $twoyuslo = 683;
+ $primer = $oneyuslo + $twoyuslo;
+ echo "первое число" . $oneyuslo . "<br>";
+ echo "второе число" . $twoyuslo . "<br>";
+ $primer = ($oneyuslo + $twoyuslo) / 2;
+ echo "равен привер" . $primer . "<br>";
