@@ -33,9 +33,8 @@ function treygolinlk(int $a, int $b, int $c)
 echo treygolinlk(10,56, 10) . "<br>";
 
 
-function bcegodeneg(int $a, int $b, int $c, int $d)
+function vsegoDeneg(int $a, int $b, int $c, int $d)
 {
-   bcegodeneg($a + $d + $c + $d)
-   return $bcegodeneg;
-)
-echo$bcegodeneg(600, 512, 903, 493) . "<br>";
+    return $a + $d + $c + $d;
+}
+echo vsegoDeneg(600, 512, 903, 493) . "<br>";
