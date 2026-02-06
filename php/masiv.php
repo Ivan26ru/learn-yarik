@@ -40,3 +40,18 @@ $person3 = [
    echo "<br>";
    echo $person3["friend3"];
    echo "<br>";
+
+
+
+   foreach ($person as $person)
+   {
+       echo $person.PHP_EOL;
+   }
+   foreach ($person2 as $person2)
+{
+    echo $person2.PHP_EOL;
+}
+    foreach ($person3 as $person3)
+{
+    echo $person3.PHP_EOL;
+}
