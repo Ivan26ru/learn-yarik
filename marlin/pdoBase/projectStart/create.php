@@ -17,7 +17,7 @@
         <?php unset($_SESSION['text']) ?>
     <?php }; ?>
 
-    <form action="store.php" method="post">
+    <form action="storn.php" method="post">
         <input placeholder="Введите имя" type="text" name="name" class="input">
         <input placeholder="Введите фамилию" type="text" name="surname" class="input">
         <input placeholder="Введите имя пользователя" type="text" name="username" class="input">
