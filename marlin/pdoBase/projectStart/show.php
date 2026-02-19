@@ -1,9 +1,10 @@
 <?php
-$pdo = new PDO('mysql:host=MySQL-8.4;dbname=learn_yarik', 'root', '');
+$pdo = new PDO('mysql:host=MySQL-8.4;dbname=base', 'root', '');
 $sql = "SELECT * FROM users WHERE ID = :id";
 $statement = $pdo->prepare($sql);
 $statement->execute($_GET);
 $user = $statement->fetch(PDO::FETCH_ASSOC);
+var_dump($user);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +19,7 @@ $user = $statement->fetch(PDO::FETCH_ASSOC);
 <h1>Users</h1>
 <div>
     <div>
-
+        имя пользователя: <?php echo $user['name'] ?>;
     </div>
 </div>
 
