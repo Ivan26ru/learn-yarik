@@ -3,16 +3,16 @@ $users = [
         [
                 "id" => 1,
                 "user" => "John",
-                "фамилия" => "exler",
+                "surname" => "exler",
                 "user_name" => "John Doe",
-                "дата создание" => "12.2.2026",
+                "date_of_creation" => "12.2.2026",
         ],
         [
                 "id" => 2,
                 "user" => "jene",
                 "surname" => "you",
                 "user_name" => "John D",
-                "date of creation" => "11.2.2026",
+                "date_of_creation" => "11.2.2026",
         ]
 ];
 ?>
@@ -41,6 +41,13 @@ $users = [
             <th>Action</th>
             </thead>
             <tbody class="tbody">
+            <?php foreach ($users as $user): ?>
+            <tr>
+                <td><?php echo $user['id'] ?></td>
+                <td><?php echo $user['name'] ?></td>
+                <td><?php echo $user['surname'] ?></td>
+                <td><?php echo $user['user_name'] ?></td>
+                <td><?php echo $user['date_of_creation'] ?></td>
             <tr>
                 <td>1</td>
                 <td>имя</td>
