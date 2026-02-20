@@ -3,7 +3,7 @@ $users = [
         [
                 "id" => 1,
                 "user" => "John",
-                "surname" => "exler",
+                "surname" => "GR",
                 "user_name" => "John Doe",
                 "date_of_creation" => "12.2.2026",
         ],
@@ -54,11 +54,12 @@ $users = [
                 <td>Фамилия</td>
                 <td>user_name</td>
                 <td>20.01.2026</td>
-                <td></td>
                 <td>
-                    <a class="btn__show" href="#">Show</a>
-                    <a class="btn__edit" href="#">Edit</a>
-                    <a class="btn__delete" href="#">Delete</a>
+                <td>
+                    <a class="btn__show" href="show.php">Show</a>
+                    <a class="btn__edit" href="store.php">Edit</a>
+                    <a class="btn__delete" href="delet.php">Delete</a>
+                </td>
                 </td>
             </tr>
             </tbody>
