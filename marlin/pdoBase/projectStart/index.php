@@ -1,21 +1,3 @@
-<?php
-$users = [
-        [
-                "id" => 1,
-                "name" => "John",
-                "surname" => "GR",
-                "user_name" => "John Doe",
-                "date_of_creation" => "12.2.2026",
-        ],
-        [
-                "id" => 2,
-                "name" => "jene",
-                "surname" => "you",
-                "user_name" => "John D",
-                "date_of_creation" => "11.2.2026",
-        ]
-];
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,6 +23,26 @@ $users = [
             <th>Action</th>
             </thead>
             <tbody class="tbody">
+
+            <?php
+            $users = [
+                [
+                    "id" => 1,
+                    "name" => "John",
+                    "surname" => "GR",
+                    "user_name" => "John Doe",
+                    "date_of_creation" => "12.2.2026",
+                ],
+                [
+                    "id" => 2,
+                    "name" => "jene",
+                    "surname" => "you",
+                    "user_name" => "John D",
+                    "date_of_creation" => "11.2.2026",
+                ]
+            ];
+            ?>
+
             <?php foreach ($users as $user) { ?>
                 <tr>
                     <td><?php echo $user['id'] ?></td>
@@ -48,7 +50,6 @@ $users = [
                     <td><?php echo $user['surname'] ?></td>
                     <td><?php echo $user['user_name'] ?></td>
                     <td><?php echo $user['date_of_creation'] ?></td>
-
 
                     <td>
                         <a class="btn__show" href="show.php">Show</a>
