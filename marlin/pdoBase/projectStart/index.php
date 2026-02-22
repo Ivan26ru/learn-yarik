@@ -2,14 +2,14 @@
 $users = [
         [
                 "id" => 1,
-                "user" => "John",
+                "name" => "John",
                 "surname" => "GR",
                 "user_name" => "John Doe",
                 "date_of_creation" => "12.2.2026",
         ],
         [
                 "id" => 2,
-                "user" => "jene",
+                "name" => "jene",
                 "surname" => "you",
                 "user_name" => "John D",
                 "date_of_creation" => "11.2.2026",
@@ -41,27 +41,23 @@ $users = [
             <th>Action</th>
             </thead>
             <tbody class="tbody">
-            <?php foreach ($users as $user): ?>
-            <tr>
-                <td><?php echo $user['id'] ?></td>
-                <td><?php echo $user['name'] ?></td>
-                <td><?php echo $user['surname'] ?></td>
-                <td><?php echo $user['user_name'] ?></td>
-                <td><?php echo $user['date_of_creation'] ?></td>
-            <tr>
-                <td>1</td>
-                <td>имя</td>
-                <td>Фамилия</td>
-                <td>user_name</td>
-                <td>20.01.2026</td>
-                <td>
-                <td>
-                    <a class="btn__show" href="show.php">Show</a>
-                    <a class="btn__edit" href="store.php">Edit</a>
-                    <a class="btn__delete" href="delet.php">Delete</a>
-                </td>
-                </td>
-            </tr>
+            <?php foreach ($users as $user) { ?>
+                <tr>
+                    <td><?php echo $user['id'] ?></td>
+                    <td><?php echo $user['name'] ?></td>
+                    <td><?php echo $user['surname'] ?></td>
+                    <td><?php echo $user['user_name'] ?></td>
+                    <td><?php echo $user['date_of_creation'] ?></td>
+
+
+                    <td>
+                        <a class="btn__show" href="show.php">Show</a>
+                        <a class="btn__edit" href="store.php">Edit</a>
+                        <a class="btn__delete" href="delet.php">Delete</a>
+                    </td>
+
+                </tr>
+            <?php } ?>
             </tbody>
         </table>
     </div>
