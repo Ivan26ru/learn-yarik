@@ -41,6 +41,7 @@
                     "date_of_creation" => "11.2.2026",
                 ]
             ];
+            var_dump($users);
             ?>
 
             <?php foreach ($users as $user) { ?>
@@ -54,7 +55,7 @@
                     <td>
                         <a class="btn__show" href="show.php">Show</a>
                         <a class="btn__edit" href="store.php">Edit</a>
-                        <a class="btn__delete" href="delet.php">Delete</a>
+                        <a class="btn__delete" href="delete.php">Delete</a>
                     </td>
 
                 </tr>
