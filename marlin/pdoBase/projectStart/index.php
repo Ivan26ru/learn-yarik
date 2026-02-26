@@ -25,23 +25,12 @@
             <tbody class="tbody">
 
             <?php
-            $users = [
-                [
-                    "id" => 1,
-                    "name" => "John",
-                    "surname" => "GR",
-                    "user_name" => "John Doe",
-                    "date_of_creation" => "12.2.2026",
-                ],
-                [
-                    "id" => 2,
-                    "name" => "jene",
-                    "surname" => "you",
-                    "user_name" => "John D",
-                    "date_of_creation" => "11.2.2026",
-                ]
-            ];
-            var_dump($users);
+            $pdo = new PDO('mysql:host=MySQL-8.4;dbname=base', 'root', '');
+            $sql = "SELECT * FROM users";
+            $statement = $pdo->prepare($sql);
+            $statement->execute();
+            $users = $statement->fetchAll(PDO::FETCH_ASSOC);
+//            var_dump($users);
             ?>
 
             <?php foreach ($users as $user) { ?>
@@ -49,7 +38,7 @@
                     <td><?php echo $user['id'] ?></td>
                     <td><?php echo $user['name'] ?></td>
                     <td><?php echo $user['surname'] ?></td>
-                    <td><?php echo $user['user_name'] ?></td>
+                    <td><?php echo $user['email'] ?></td>
                     <td><?php echo $user['date_of_creation'] ?></td>
 
                     <td>
