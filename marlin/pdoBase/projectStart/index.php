@@ -42,9 +42,9 @@
                     <td><?php echo $user['date_of_creation'] ?></td>
 
                     <td>
-                        <a class="btn__show" href="show.php">Show</a>
+                        <a class="btn__show" href="show.php?id=<?php echo $user['id']; ?>">Show</a>
                         <a class="btn__edit" href="store.php">Edit</a>
-                        <a class="btn__delete" href="delete.php">Delete</a>
+                        <a class="btn__delete" href="delete.php?id=<?php echo $user['id']; ?>">Delete</a>
                     </td>
 
                 </tr>
