@@ -35,7 +35,8 @@ var_dump($user);
     <?php unset($_SESSION['text']) ?>
 <?php }; ?>
 
-<form action="store.php" method="post">
+<form action="update.php" method="post">
+    <input  type="hidden" name="id" class="input" value="<?php echo $user['id'] ?>">
     <input placeholder="Введите имя" type="text" name="name" class="input" value="<?php echo $user['name'] ?>">
     <input placeholder="Введите фамилию" type="text" name="surname" class="input" value="<?php echo $user['surname'] ?>">
     <input placeholder="Введите имя пользователя" type="text" name="username" class="input"value="<?php echo $user['username'] ?>">
