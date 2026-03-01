@@ -43,7 +43,7 @@
 
                     <td>
                         <a class="btn__show" href="show.php?id=<?php echo $user['id']; ?>">Show</a>
-                        <a class="btn__edit" href="store.php">Edit</a>
+                        <a class="btn__edit" href="edit.php?id=<?php echo $user['id']; ?>">Edit</a>
                         <a class="btn__delete" href="delete.php?id=<?php echo $user['id']; ?>">Delete</a>
                     </td>
 
