@@ -32,53 +32,53 @@
                             data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
                 </div>
             </div>
+            <?php
+            $items = [
+                    [
+                            'title' => "Мои задачи",
+                            'total' => "7/10",
+                            'value' => 65,
+                            'styleClass' => "bg-success-400",
+                    ],
+                    [
+                            'title' => "Емкость диска",
+                            'total' => "440TB",
+                            'value' => 34,
+                            'styleClass' => "bg-success-500",
+                    ],
+                    [
+                            'title' => "Пройдено уроков",
+                            'total' => "77%",
+                            'value' => 77,
+                            'styleClass' => "bg-info-400",
+                    ],
+                    [
+                            'title' => "Осталось дней",
+                            'total' => "2 дня",
+                            'value' => 84,
+                            'styleClass' => "bg-primary-300",
+                    ],
+            ]
+            ?>
             <div class="panel-container show">
                 <div class="panel-content">
-                    <div class="d-flex mt-2">
-                        Мои задачи
-                        <?php
-                        $itetems = [
-                                [
-                                        "titile" => "Мои задачи",
-                                        "total" => "7/10",
-                                        "valel" => "65",
-                                        "styleClass" => "bg-success-400",
-                                ],
-                                [
-                                        "titile" => "Емкость диска",
-                                        "total" => "440TB",
-                                        "valel" => "34",
-                                        "styleClass" => "bg-success-500",
-                                ],
-                                [
-                                        "titile" => "Пройдено уроков",
-                                        "total" => "77%",
-                                        "valel" => "77",
-                                        "styleClass" => "bg-info-300",
-                                ],
-                                [
-                                        "titile" => "Осталось дней",
-                                        "total" => "2 дня",
-                                        "valel" => "84",
-                                        "styleClass" => "bg-primary-300",
-                                ],
-                        ]
-                        ?>
-                        <div class="panel-container show">
-                            <div class="panel-content">
-                                <?php foreach ($itetems as $item) { ?>
-                                    <div class="d-flex mt-2">
-                                        <?php echo $item["titile"]; ?>
-                                        <span class="progress-bar"<?php echo $item["styleClass"]; ?>>
-                            <div class="d-inline-block mt-auto<?php echo $item["total"]; ?>" role="progressbar"
-                                 style="width: <?php echo $item["valel"]; ?>%;"
-                                 aria-valuenow="<?php echo $item["valel"]; ?>"
-                                 aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                <?php }
-                                ?>
-                            </div>
+
+                    <?php
+                    foreach ($items as $item) { ?>
+                        <div class="d-flex mt-2">
+                            <?php echo $item['title']; ?>
+                            <span class="d-inline-block ml-auto"><?php echo $item['total']; ?></span>
                         </div>
+                        <div class="progress progress-sm mb-3">
+                            <div class="progress-bar <?php echo $item['styleClass']; ?>" role="progressbar"
+                                 style="width: <?php echo $item['value']; ?>%;"
+                                 aria-valuenow="<?php echo $item['value']; ?>"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    <?php }
+                    ?>
+                </div>
+            </div>
 </main>
 
 
