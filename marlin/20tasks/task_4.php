@@ -41,24 +41,16 @@
                     <?php
                     $alidom = [
                             [
-                                    "foto" => "img/demo/gallery/thumb/21.jpg",
-                            ], [
-                                    "foto" => "img/demo/gallery/thumb/22.jpg",
-                            ], [
-                                    "foto" => "img/demo/gallery/thumb/23.jpg",
-                            ],
-                            [
-                                    "foto" => "img/demo/gallery/thumb/24.jpg",
-                            ], [
-                                    "foto" => "img/demo/gallery/thumb/25.jpg",
-                            ], [
-                                    "foto" => "img/demo/gallery/thumb/26.jpg",
+                                    "imgGallery" => "img/demo/gallery/21.jpg",
+                                    "imgThumb" => "img/demo/thumb/21.jpg",
                             ]
-                    ]
+                    ];
+                    $imgGallery = "img/demo/gallery/21.jpg";
+                    $imgThumb = "img/demo/gallery/thumb/22.jpg";
                     ?>
                     <div id="js-lightgallery">
-                        <a class="" href="img/demo/gallery/21.jpg">
-                            <img class="img-responsive" src="img/demo/gallery/thumb/21.jpg" alt="image">
+                        <a class="" href="<?php echo $imgGallery; ?>">
+                            <img class="img-responsive" src="<?php echo $imgThumb; ?>" alt="image">
                         </a>
                         <a class="" href="img/demo/gallery/22.jpg">
                             <img class="img-responsive" src="img/demo/gallery/thumb/22.jpg" alt="image">
@@ -81,7 +73,6 @@
         </div>
     </div>
 </main>
-
 
 
 <script src="js/vendors.bundle.js"></script>
