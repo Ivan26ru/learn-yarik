@@ -43,31 +43,63 @@
                             [
                                     "imgGallery" => "img/demo/gallery/21.jpg",
                                     "imgThumb" => "img/demo/thumb/21.jpg",
-                            ]
+                            ],
+                            [
+                                    "imgGallery" => "img/demo/gallery/22.jpg",
+                                    "imgThumb" => "img/demo/thumb/22.jpg",
+                            ],
+                            [
+                                    "imgGallery" => "img/demo/gallery/23.jpg",
+                                    "imgThumb" => "img/demo/thumb/23.jpg",
+                            ],
+                            [
+                                    "imgGallery" => "img/demo/gallery/24.jpg",
+                                    "imgThumb" => "img/demo/thumb/24.jpg",
+                            ],
+                            [
+                                    "imgGallery" => "img/demo/gallery/25.jpg",
+                                    "imgThumb" => "img/demo/thumb/25.jpg",
+                            ],
+                            [
+                                    "imgGallery" => "img/demo/gallery/26.jpg",
+                                    "imgThumb" => "img/demo/thumb/26.jpg",
+                            ],
                     ];
 
                     ?>
                     <div id="js-lightgallery">
-                        <?php foreach ($albom as $item){ ?>
+                        <?php foreach ($albom
+
+                        as $item){ ?>
                         <a class="" href="<?php echo $item['imgGallery']; ?>">
                             <img class="img-responsive" src="<?php echo $item['imgThumb']; ?>" alt="image">
                         </a>
-                        <?php } ?>
-                        <a class="" href="img/demo/gallery/22.jpg">
-                            <img class="img-responsive" src="img/demo/gallery/thumb/22.jpg" alt="image">
+
+                        <?php foreach ($albom
+
+                        as $item){ ?>
+                        <a class="" href="<?php echo $item['imgGallery']; ?>">
+                            <img class="img-responsive" src="<?php echo $item['imgThumb']; ?>" alt="image">
                         </a>
-                        <a class="" href="img/demo/gallery/23.jpg">
-                            <img class="img-responsive" src="img/demo/gallery/thumb/23.jpg" alt="image">
+                        <?php foreach ($albom
+                        as $item){ ?>
+                        <a class="" href="<?php echo $item['imgGallery']; ?>">
+                            <img class="img-responsive" src="<?php echo $item['imgThumb']; ?>" alt="image">
+                        </a><?php foreach ($albom
+                        as $item){ ?>
+                        <a class="" href="<?php echo $item['imgGallery']; ?>">
+                            <img class="img-responsive" src="<?php echo $item['imgThumb']; ?>" alt="image">
+                        </a><?php foreach ($albom
+                        as $item){ ?>
+                        <a class="" href="<?php echo $item['imgGallery']; ?>">
+                            <img class="img-responsive" src="<?php echo $item['imgThumb']; ?>" alt="image">
+                        </a><?php foreach ($albom
+                        as $item){ ?>
+                        <a class="" href="<?php echo $item['imgGallery']; ?>">
+                            <img class="img-responsive" src="<?php echo $item['imgThumb']; ?>" alt="image">
                         </a>
-                        <a class="" href="img/demo/gallery/24.jpg">
-                            <img class="img-responsive" src="img/demo/gallery/thumb/24.jpg" alt="image">
-                        </a>
-                        <a class="" href="img/demo/gallery/25.jpg">
-                            <img class="img-responsive" src="img/demo/gallery/thumb/25.jpg" alt="image">
-                        </a>
-                        <a class="" href="img/demo/gallery/26.jpg">
-                            <img class="img-responsive" src="img/demo/gallery/thumb/26.jpg" alt="image">
-                        </a>
+                    <?php } ?>
+
                     </div>
                 </div>
             </div>
