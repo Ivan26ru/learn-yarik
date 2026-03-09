@@ -39,19 +39,20 @@
                         <p>Сформируйте массив данных и выведите полностью альбом.</p>
                     </div> -->
                     <?php
-                    $alidom = [
+                    $albom = [
                             [
                                     "imgGallery" => "img/demo/gallery/21.jpg",
                                     "imgThumb" => "img/demo/thumb/21.jpg",
                             ]
                     ];
-                    $imgGallery = "img/demo/gallery/21.jpg";
-                    $imgThumb = "img/demo/gallery/thumb/22.jpg";
+
                     ?>
                     <div id="js-lightgallery">
-                        <a class="" href="<?php echo $imgGallery; ?>">
-                            <img class="img-responsive" src="<?php echo $imgThumb; ?>" alt="image">
+                        <?php foreach ($albom as $item){ ?>
+                        <a class="" href="<?php echo $item['imgGallery']; ?>">
+                            <img class="img-responsive" src="<?php echo $item['imgThumb']; ?>" alt="image">
                         </a>
+                        <?php } ?>
                         <a class="" href="img/demo/gallery/22.jpg">
                             <img class="img-responsive" src="img/demo/gallery/thumb/22.jpg" alt="image">
                         </a>
