@@ -1,4 +1,4 @@
-\ws<!DOCTYPE html>
+s<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -47,21 +47,34 @@
                                     </div>
                                 </div>
                             </div>
-                            <ul id="js-list-msg" class="list-group px-2 pb-2 js-list-filter">
-                                <li class="list-group-item">
-                                    <span data-filter-tags="reports file">Репорты</span>
-                                </li>
-                                <li class="list-group-item">
-                                    <span data-filter-tags="analytics graphs">Аналитика</span>
-                                </li>
-                                <li class="list-group-item">
-                                    <span data-filter-tags="export download">Экспорт</span>
-                                </li>
-                                <li class="list-group-item">
-                                    <span data-filter-tags="storage">Хранилище</span>
-                                </li>
-                            </ul>
+                            <?php
+                            $arrData = [
+                                    [
+                                            "tags" => "repost file",
+                                            "name" => "Репорты 1",
+                                    ],
+                                    [
+                                            "tags" => "analyttics graphics file",
+                                            "name" => "Аналитика",
+                                    ],
+                                    [
+                                            "tags" => "export downloand",
+                                            "name" => "Экспорт",
+                                    ],
+                                    [
+                                            "tags" => "storage",
+                                            "name" => "Хранилеще",
+                                    ],
+                            ]
+                            ?>
                             <div class="filter-message js-filter-message mt-0 fs-sm"></div>
+                            <?php foreach ($arrData
+
+                            as $arrDatum){ ?>
+                            <li class="list-group-item">
+                                <span data-filter-tags="<?php echo $arrDatum['tags'] ?>"><?php echo $arrDatum['name'] ?></span>
+                            </li>
+<?php } ?>
                         </div>
                     </div>
                 </div>
