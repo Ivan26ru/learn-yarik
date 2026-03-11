@@ -145,6 +145,7 @@
             });
         }
         ;
+
         $initScope.on('onAfterOpen.lg', function (event) {
             $('body').addClass("overflow-hidden");
         });
