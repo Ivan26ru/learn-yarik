@@ -32,17 +32,18 @@
                             data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
                 </div>
             </div>
+            <?php foreach ($list as $item) { ?>
             <div class="panel-container show">
                 <div class="panel-content">
-                    <div class="d-flex flex-wrap demo demo-h-spacing mt-3 mb-3">
-                        <div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                            <img src="img/demo/authors/sunny.png" alt="Sunny A."
-                                 class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
-                            <div class="ml-2 mr-3">
+                    <a class="d-flex flex-wrap demo demo-h-spacing mt-3 mb-3">
+                        <a class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
+                            <img <?php echo $item ['foto']?><?php echo  $item ['name']?>>
+                                <a class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
+                            < class="ml-2 mr-3">
                                 <h5 class="m-0">
-                                    Sunny A. (UI/UX Expert)
+                                    <?php echo $item ['name2']?>
                                     <small class="m-0 fw-300">
-                                        Lead Author
+                                        <?php echo $item ['job']?>
                                     </small>
                                 </h5>
                                 <?php
@@ -89,59 +90,60 @@
                                 ];
 
                                 ?>
-                                <a href="https://twitter.com/@myplaneticket" class="text-info fs-sm" target="_blank">@myplaneticket</a>
 
+
+
+                        <a class="text-info fs-sm"<?php echo $item['wrabootstarp'] ?>></a>
+                              <a> title="Contact Sunny"<?php echo $item ['title']?>><i class="fal fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
+                            <img <?php echo $item ['foto']?><?php echo $item['name'] ?>
+                                 class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
+                            <div class="ml-2 mr-3">
+                                <h5 class="m-0">
+                                    <?php echo $item['name2'] ?>
+                                    <small class="m-0 fw-300">
+                                        <?php echo $item ['job'] ?>
+                                    </small>
+                                </h5>
+                                <a <?php echo $item ['twitter'] ?> class="text-info fs-sm" target="_blank"><?php echo ['username']?> </a>
                                 -
-                                <a href="https://wrapbootstrap.com/user/myorange" class="text-info fs-sm"
-                                   target="_blank" title="Contact Sunny"><i class="fal fa-envelope"></i></a>
+                                <a<?php echo $item['wrabootstarp']?> class="text-info fs-sm" target="_blank"
+                                   <?php echo $item ['title']?>><i class="fal fa-envelope"></i></a>
                             </div>
                         </div>
                         <div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                            <img src="img/demo/authors/josh.png" alt="Jos K."
-                                 class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
+                            <img <?php echo $item ['foto']?><?php echo $item['name'] ?>
+                           <a> class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
                             <div class="ml-2 mr-3">
                                 <h5 class="m-0">
-                                    Jos K. (ASP.NET Developer)
+                                    <?php echo $item['name2'] ?>
                                     <small class="m-0 fw-300">
-                                        Partnet &amp; Contributor
+                                        <?php echo $item ['job'] ?>
                                     </small>
                                 </h5>
-                                <a href="https://twitter.com/@atlantez" class="text-info fs-sm" target="_blank">@atlantez</a>
-                                -
-                                <a href="https://wrapbootstrap.com/user/Walapa" class="text-info fs-sm" target="_blank"
-                                   title="Contact Jos"><i class="fal fa-envelope"></i></a>
+                                <a <?php echo  $item ['twitter']?>class="text-info fs-sm"
+                               <?php echo $item['wrabootstarp']?> target="_blank"><?php echo ['username']?></a>
+                                <a  class="text-info fs-sm" target="_blank"
+                                   <?php echo $item ['title'] ?>><i class="fal fa-envelope"></i></a>
                             </div>
                         </div>
                         <div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                            <img src="img/demo/authors/jovanni.png" alt="Jovanni Lo"
-                                 class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
+                            <img <?php echo $item ['foto']?><?php echo $item['name'] ?>></img>
+                               <a  class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
                             <div class="ml-2 mr-3">
                                 <h5 class="m-0">
-                                    Jovanni L. (PHP Developer)
+                                    <?php echo $item['name2'] ?>
                                     <small class="m-0 fw-300">
-                                        Partner &amp; Contributor
+                                        <?php echo $item ['job'] ?>
                                     </small>
                                 </h5>
-                                <a href="https://twitter.com/@lodev09" class="text-info fs-sm"
-                                   target="_blank">@lodev09</a> -
-                                <a href="https://wrapbootstrap.com/user/lodev09" class="text-info fs-sm" target="_blank"
-                                   title="Contact Jovanni"><i class="fal fa-envelope"></i></a>
-                            </div>
-                        </div>
-                        <div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                            <img src="img/demo/authors/roberto.png" alt="Jovanni Lo"
-                                 class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
-                            <div class="ml-2 mr-3">
-                                <h5 class="m-0">
-                                    Roberto R. (Rails Developer)
-                                    <small class="m-0 fw-300">
-                                        Partner &amp; Contributor
-                                    </small>
-                                </h5>
-                                <a href="https://twitter.com/@sildur" class="text-info fs-sm"
-                                   target="_blank">@sildur</a> -
-                                <a href="https://wrapbootstrap.com/user/sildur" class="text-info fs-sm" target="_blank"
-                                   title="Contact Roberto"><i class="fal fa-envelope"></i></a>
+                                <a <?php echo $item ['twitter'] ?>class="text-info fs-sm"
+                                   target="_blank"></a>
+                                <a <?php echo $item['wrabootstarp']?> class="text-info fs-sm" target="_blank"<?php echo ['username']?>
+                                        <?php echo $item ['title'] ?>><i class="fal fa-envelope"></i></a>
+                                <?php } ?>
                             </div>
                         </div>
                     </div>
