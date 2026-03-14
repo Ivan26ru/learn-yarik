@@ -32,6 +32,51 @@
                             data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
                 </div>
             </div>
+            <?php
+            $list = [
+                    [
+                            'name' => 'Jos K',
+                            'job' => ' Partnet &amp; Contributor',
+                            'username' => '@atlantz',
+                            'twitter' => 'https://twitter.com/@atlantez',
+                            'wrapbootstrap' => 'wrapbootstrap.com/user/Walapa',
+                            'name2' => '(ASP.NET Developer)',
+                            'title' => "Contact Jos",
+                            'foto' => 'img/demo/authors/josh.png'
+                    ], [
+                            'name' => 'Sunny A',
+                            'job' => 'Lead Author',
+                            'username' => '@myplaneticket',
+                            'twitter' => 'https://twitter.com/@myplaneticket',
+                            'wrapbootstrap' => 'https://wrapbootstrap.com/user/myorange',
+                            'name2' => '(UI/UX Expert)',
+                            'title' => "Contact Sunny",
+                            'foto' => "img/demo/authors/sunny.png",
+                    ],[
+                            'name'=> 'Jovanni L',
+                            'job' => 'Partner &amp; Contributor',
+                            'username' => '@lodev09',
+                            'twitter' => 'https://twitter.com/lodev09',
+                            'wrapbootstrap' => 'https://wrapbootstrap.com/user/lodev09',
+                            'name2' => '(PHP Developer)',
+                            'title' => "Contact Jovanni",
+                            'foto' => "img/demo/authors/jovanni.png",
+                    ],[
+                            'name' => 'Roberto R',
+                            'job' => ' Partnet &amp; Contributor',
+                            'username' => '@sildur',
+                            'twitter' => 'https://twitter.com/sildur',
+                            'wrapbootstrap' => 'https://wrapbootstrap.com/user/sildur',
+                            'name2' => '(Rails Developer)',
+                            'title' => "Contact Roberto",
+                            'foto' => "img/demo/authors/roberto.png",
+                    ]
+
+
+            ];
+
+            ?>
+
             <?php foreach ($list as $item) { ?>
             <div class="panel-container show">
                 <div class="panel-content">
