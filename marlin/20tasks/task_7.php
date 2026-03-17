@@ -111,6 +111,7 @@ $items = [[
 
 
 ?>
+<?php foreach ($items as $item){ ?>
 <body class="mod-bg-1 mod-nav-link ">
 <main id="js-page-content" role="main" class="page-content">
     <div class="row">
@@ -132,17 +133,17 @@ $items = [[
     </div>
     <div class="row js-list-filter" id="js-contacts">
         <div class="col-xl-4">
-            <div id="c_1" class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="oliver kopyov">
+            <div id="<?php echo $items ['id']?>"class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="<?php echo $items ['name_fitler']?>">
                 <div class="card-body border-faded border-top-0 border-left-0 border-right-0 rounded-top">
                     <div class="d-flex flex-row align-items-center">
-                                <span class="status status-success mr-3">
+                                <span class="<?php echo $items ['status']?>">
                                     <span class="rounded-circle profile-image d-block "
-                                          style="background-image:url('img/demo/avatars/avatar-b.png'); background-size: cover;"></span>
+                                          style="background-image:url('<?php echo $items ['avvatar']?>'); background-size: cover;"></span>
                                 </span>
                         <div class="info-card-text flex-1">
                             <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
                                data-toggle="dropdown" aria-expanded="false">
-                                Oliver Kopyov
+                                <?php echo $items ['name_surname']?>
                                 <i class="fal fa-angle-down d-inline-block ml-1 fs-md"></i>
                             </a>
                             <div class="dropdown-menu">
@@ -150,7 +151,7 @@ $items = [[
                                 <a class="dropdown-item" href="#">Create Appointment</a>
                                 <a class="dropdown-item" href="#">Block User</a>
                             </div>
-                            <span class="text-truncate text-truncate-xl">IT Director, Gotbootstrap Inc.</span>
+                            <span class="text-truncate text-truncate-xl"><?php echo $items ['jods']?></span>
                         </div>
                         <button class="js-expand-btn btn btn-sm btn-default d-none waves-effect waves-themed"
                                 data-toggle="collapse" data-target="#c_1 > .card-body + .card-body"
@@ -163,11 +164,11 @@ $items = [[
                 <div class="card-body p-0 collapse show">
                     <div class="p-3">
                         <a href="tel:+13174562564" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mobile-alt text-muted mr-2"></i> +1 317-456-2564</a>
+                            <i class="fas fa-mobile-alt text-muted mr-2"></i> <?php echo $items ['phone']?></a>
                         <a href="mailto:oliver.kopyov@smartadminwebapp.com" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> oliver.kopyov@smartadminwebapp.com</a>
+                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> <?php echo $items ['email']?></a>
                         <address class="fs-sm fw-400 mt-4 text-muted">
-                            <i class="fas fa-map-pin mr-2"></i> 15 Charist St, Detroit, MI, 48212, USA
+                            <i class="fas fa-map-pin mr-2"><?php echo $items ['addres']?></i>
                         </address>
                         <div class="d-flex flex-row">
                             <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#3b5998">
@@ -185,17 +186,17 @@ $items = [[
             </div>
         </div>
         <div class="col-xl-4">
-            <div id="c_2" class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="sesha gray">
+            <div id="<?php echo $items ['id']?>"class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="<?php echo $items ['name_fitler']?>">
                 <div class="card-body border-faded border-top-0 border-left-0 border-right-0 rounded-top">
                     <div class="d-flex flex-row align-items-center">
-                                <span class="status status-warning mr-3">
+                                <span class="<?php echo $items ['status']?>">
                                     <span class="rounded-circle profile-image d-block "
-                                          style="background-image:url('img/demo/avatars/avatar-c.png'); background-size: cover;"></span>
+                                          style="background-image:url('<?php echo $items ['avvatar']?>'); background-size: cover;"></span>
                                 </span>
                         <div class="info-card-text flex-1">
                             <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
                                data-toggle="dropdown" aria-expanded="false">
-                                Sesha Gray
+                                <?php echo $items ['name_surname']?>
                                 <i class="fal fa-angle-down d-inline-block ml-1 fs-md"></i>
                             </a>
                             <div class="dropdown-menu">
@@ -203,7 +204,7 @@ $items = [[
                                 <a class="dropdown-item" href="#">Create Appointment</a>
                                 <a class="dropdown-item" href="#">Block User</a>
                             </div>
-                            <span class="text-truncate text-truncate-xl">Project Manager, Gotbootstrap Inc.</span>
+                            <span class="text-truncate text-truncate-xl"><?php echo $items ['jods']?></span>
                         </div>
                         <button class="js-expand-btn btn btn-sm btn-default d-none waves-effect waves-themed"
                                 data-toggle="collapse" data-target="#c_2 > .card-body + .card-body"
@@ -216,11 +217,11 @@ $items = [[
                 <div class="card-body p-0 collapse show">
                     <div class="p-3">
                         <a href="tel:+13174562564" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mobile-alt text-muted mr-2"></i> +1 313-461-1347</a>
+                            <i class="fas fa-mobile-alt text-muted mr-2"></i> <?php echo $items ['phone']?></a>
                         <a href="mailto:oliver.kopyov@smartadminwebapp.com" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> sesha.gray@smartadminwebapp.com</a>
+                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> <?php echo $items ['email']?></a>
                         <address class="fs-sm fw-400 mt-4 text-muted">
-                            <i class="fas fa-map-pin mr-2"></i> 134 Hamtrammac, Detroit, MI, 48314, USA
+                            <i class="fas fa-map-pin mr-2"><?php echo $items ['addres']?></i>
                         </address>
                         <div class="d-flex flex-row">
                             <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#3b5998">
@@ -238,17 +239,17 @@ $items = [[
             </div>
         </div>
         <div class="col-xl-4">
-            <div id="c_3" class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="dr john cook">
+            <div  id="<?php echo $items ['id']?>" class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="<?php echo $items ['name_fitler']?>">
                 <div class="card-body border-faded border-top-0 border-left-0 border-right-0 rounded-top">
                     <div class="d-flex flex-row align-items-center">
-                                <span class="status status-danger mr-3">
+                                <span class="<?php echo $items ['status']?>">
                                     <span class="rounded-circle profile-image d-block "
-                                          style="background-image:url('img/demo/avatars/avatar-e.png'); background-size: cover;"></span>
+                                          style="background-image:url(<?php echo $items ['avvatar']?>'); background-size: cover;"></span>
                                 </span>
                         <div class="info-card-text flex-1">
                             <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
                                data-toggle="dropdown" aria-expanded="false">
-                                Dr. John Cook PhD
+                                <?php echo $items ['name_surname']?>
                                 <i class="fal fa-angle-down d-inline-block ml-1 fs-md"></i>
                             </a>
                             <div class="dropdown-menu">
@@ -256,7 +257,7 @@ $items = [[
                                 <a class="dropdown-item" href="#">Create Appointment</a>
                                 <a class="dropdown-item" href="#">Block User</a>
                             </div>
-                            <span class="text-truncate text-truncate-xl">Human Resources, Gotbootstrap Inc.</span>
+                            <span class="text-truncate text-truncate-xl"><?php echo $items ['jods']?></span>
                         </div>
                         <button class="js-expand-btn btn btn-sm btn-default d-none waves-effect waves-themed"
                                 data-toggle="collapse" data-target="#c_3 > .card-body + .card-body"
@@ -269,11 +270,11 @@ $items = [[
                 <div class="card-body p-0 collapse show">
                     <div class="p-3">
                         <a href="tel:+13174562564" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mobile-alt text-muted mr-2"></i> +1 313-779-1347</a>
+                            <i class="fas fa-mobile-alt text-muted mr-2"></i> <?php echo $items ['phone']?></a>
                         <a href="mailto:oliver.kopyov@smartadminwebapp.com" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> john.cook@smartadminwebapp.com</a>
+                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> <?php echo $items ['email']?></a>
                         <address class="fs-sm fw-400 mt-4 text-muted">
-                            <i class="fas fa-map-pin mr-2"></i> 55 Smyth Rd, Detroit, MI, 48341, USA
+                            <i class="fas fa-map-pin mr-2"></i> <?php echo $items ['addres']?>
                         </address>
                         <div class="d-flex flex-row">
                             <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#3b5998">
@@ -291,17 +292,17 @@ $items = [[
             </div>
         </div>
         <div class="col-xl-4">
-            <div id="c_4" class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="jim ketty">
+            <div  id="<?php echo $items ['id']?>" class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="<?php echo $items ['name_fitler']?>">
                 <div class="card-body border-faded border-top-0 border-left-0 border-right-0 rounded-top">
                     <div class="d-flex flex-row align-items-center">
-                                <span class="status status-success mr-3">
+                                <span class="<?php echo $items ['status']?>">
                                     <span class="rounded-circle profile-image d-block "
-                                          style="background-image:url('img/demo/avatars/avatar-k.png'); background-size: cover;"></span>
+                                          style="background-image:url('<?php echo $items ['avvatar']?>'); background-size: cover;"></span>
                                 </span>
                         <div class="info-card-text flex-1">
                             <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
                                data-toggle="dropdown" aria-expanded="false">
-                                Jim Ketty
+                                <?php echo $items ['name_surname']?>
                                 <i class="fal fa-angle-down d-inline-block ml-1 fs-md"></i>
                             </a>
                             <div class="dropdown-menu">
@@ -309,7 +310,7 @@ $items = [[
                                 <a class="dropdown-item" href="#">Create Appointment</a>
                                 <a class="dropdown-item" href="#">Block User</a>
                             </div>
-                            <span class="text-truncate text-truncate-xl">Staff Orgnizer, Gotbootstrap Inc.</span>
+                            <span class="text-truncate text-truncate-xl"><?php echo $items ['jods']?></span>
                         </div>
                         <button class="js-expand-btn btn btn-sm btn-default d-none waves-effect waves-themed"
                                 data-toggle="collapse" data-target="#c_4 > .card-body + .card-body"
@@ -322,11 +323,11 @@ $items = [[
                 <div class="card-body p-0 collapse show">
                     <div class="p-3">
                         <a href="tel:+13174562564" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mobile-alt text-muted mr-2"></i> +1 313-779-3314</a>
+                            <i class="fas fa-mobile-alt text-muted mr-2"></i> <?php echo $items ['phone']?></a>
                         <a href="mailto:oliver.kopyov@smartadminwebapp.com" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> jim.ketty@smartadminwebapp.com</a>
+                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> <?php echo $items ['email']?></a>
                         <address class="fs-sm fw-400 mt-4 text-muted">
-                            <i class="fas fa-map-pin mr-2"></i> 134 Tasy Rd, Detroit, MI, 48212, USA
+                            <i class="fas fa-map-pin mr-2"></i> <?php echo $items ['addres']?>
                         </address>
                         <div class="d-flex flex-row">
                             <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#3b5998">
@@ -344,17 +345,17 @@ $items = [[
             </div>
         </div>
         <div class="col-xl-4">
-            <div id="c_5" class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="aaron tellus">
+            <div id="<?php echo $items ['id']?>" class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="<?php echo $items ['name_fitler']?>">
                 <div class="card-body border-faded border-top-0 border-left-0 border-right-0 rounded-top">
                     <div class="d-flex flex-row align-items-center">
-                                <span class="status status-success mr-3">
+                                <span class="<?php echo $items ['status']?>">
                                     <span class="rounded-circle profile-image d-block "
-                                          style="background-image:url('img/demo/avatars/avatar-g.png'); background-size: cover;"></span>
+                                          style="background-image:url('<?php echo $items ['avvatar']?>'); background-size: cover;"></span>
                                 </span>
                         <div class="info-card-text flex-1">
                             <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
                                data-toggle="dropdown" aria-expanded="false">
-                                Dr. John Oliver
+                                <?php echo $items ['name_surname']?>
                                 <i class="fal fa-angle-down d-inline-block ml-1 fs-md"></i>
                             </a>
                             <div class="dropdown-menu">
@@ -362,7 +363,7 @@ $items = [[
                                 <a class="dropdown-item" href="#">Create Appointment</a>
                                 <a class="dropdown-item" href="#">Block User</a>
                             </div>
-                            <span class="text-truncate text-truncate-xl">Oncologist, Gotbootstrap Inc.</span>
+                            <span class="text-truncate text-truncate-xl"><?php echo $items ['jods']?></span>
                         </div>
                         <button class="js-expand-btn btn btn-sm btn-default d-none waves-effect waves-themed"
                                 data-toggle="collapse" data-target="#c_5 > .card-body + .card-body"
@@ -375,11 +376,11 @@ $items = [[
                 <div class="card-body p-0 collapse show">
                     <div class="p-3">
                         <a href="tel:+13174562564" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mobile-alt text-muted mr-2"></i> +1 313-779-8134</a>
+                            <i class="fas fa-mobile-alt text-muted mr-2"></i> <?php echo $items ['phone']?></a>
                         <a href="mailto:oliver.kopyov@smartadminwebapp.com" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> john.oliver@smartadminwebapp.com</a>
+                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> <?php echo $items ['email']?></a>
                         <address class="fs-sm fw-400 mt-4 text-muted">
-                            <i class="fas fa-map-pin mr-2"></i> 134 Gallery St, Detroit, MI, 46214, USA
+                            <i class="fas fa-map-pin mr-2"></i> <?php echo $items ['addres']?>
                         </address>
                         <div class="d-flex flex-row">
                             <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#3b5998">
@@ -397,17 +398,17 @@ $items = [[
             </div>
         </div>
         <div class="col-xl-4">
-            <div id="c_6" class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="sarah mcbrook">
+            <div id="<?php echo $items ['id']?>" class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="<?php echo $items ['name_fitler']?>">
                 <div class="card-body border-faded border-top-0 border-left-0 border-right-0 rounded-top">
                     <div class="d-flex flex-row align-items-center">
-                                <span class="status status-success mr-3">
+                                <span class="<?php echo $items ['status']?>">
                                     <span class="rounded-circle profile-image d-block "
-                                          style="background-image:url('img/demo/avatars/avatar-h.png'); background-size: cover;"></span>
+                                          style="background-image:url('<?php echo $items ['avvatar']?>'); background-size: cover;"></span>
                                 </span>
                         <div class="info-card-text flex-1">
                             <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
                                data-toggle="dropdown" aria-expanded="false">
-                                Sarah McBrook
+                                <?php echo $items ['name_surname']?>
                                 <i class="fal fa-angle-down d-inline-block ml-1 fs-md"></i>
                             </a>
                             <div class="dropdown-menu">
@@ -415,7 +416,7 @@ $items = [[
                                 <a class="dropdown-item" href="#">Create Appointment</a>
                                 <a class="dropdown-item" href="#">Block User</a>
                             </div>
-                            <span class="text-truncate text-truncate-xl">Xray Division, Gotbootstrap Inc.</span>
+                            <span class="text-truncate text-truncate-xl"><?php echo $items ['jods']?></span>
                         </div>
                         <button class="js-expand-btn btn btn-sm btn-default d-none waves-effect waves-themed"
                                 data-toggle="collapse" data-target="#c_6 > .card-body + .card-body"
@@ -428,11 +429,11 @@ $items = [[
                 <div class="card-body p-0 collapse show">
                     <div class="p-3">
                         <a href="tel:+13174562564" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mobile-alt text-muted mr-2"></i> +1 313-779-7613</a>
+                            <i class="fas fa-mobile-alt text-muted mr-2"></i> <?php echo $items ['phone']?></a>
                         <a href="mailto:oliver.kopyov@smartadminwebapp.com" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> sarah.mcbrook@smartadminwebapp.com</a>
+                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> <?php echo $items ['email']?></a>
                         <address class="fs-sm fw-400 mt-4 text-muted">
-                            <i class="fas fa-map-pin mr-2"></i> 13 Jamie Rd, Detroit, MI, 48313, USA
+                            <i class="fas fa-map-pin mr-2"></i> <?php echo $items ['addres']?>
                         </address>
                         <div class="d-flex flex-row">
                             <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#3b5998">
@@ -450,17 +451,17 @@ $items = [[
             </div>
         </div>
         <div class="col-xl-4">
-            <div id="c_7" class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="jimmy fellan">
+            <div id="<?php echo $items ['id']?>" class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="<?php echo $items ['name_fitler']?>">
                 <div class="card-body border-faded border-top-0 border-left-0 border-right-0 rounded-top">
                     <div class="d-flex flex-row align-items-center">
-                                <span class="status status-success mr-3">
+                                <span class="<?php echo $items ['status']?>">
                                     <span class="rounded-circle profile-image d-block "
-                                          style="background-image:url('img/demo/avatars/avatar-i.png'); background-size: cover;"></span>
+                                          style="background-image:url('<?php echo $items ['avvatar']?>'); background-size: cover;"></span>
                                 </span>
                         <div class="info-card-text flex-1">
                             <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
                                data-toggle="dropdown" aria-expanded="false">
-                                Jimmy Fellan
+                                <?php echo $items ['name_surname']?>
                                 <i class="fal fa-angle-down d-inline-block ml-1 fs-md"></i>
                             </a>
                             <div class="dropdown-menu">
@@ -468,7 +469,7 @@ $items = [[
                                 <a class="dropdown-item" href="#">Create Appointment</a>
                                 <a class="dropdown-item" href="#">Block User</a>
                             </div>
-                            <span class="text-truncate text-truncate-xl">Accounting, Gotbootstrap Inc.</span>
+                            <span class="text-truncate text-truncate-xl"><?php echo $items ['jods']?></span>
                         </div>
                         <button class="js-expand-btn btn btn-sm btn-default d-none waves-effect waves-themed"
                                 data-toggle="collapse" data-target="#c_7 > .card-body + .card-body"
@@ -481,11 +482,11 @@ $items = [[
                 <div class="card-body p-0 collapse show">
                     <div class="p-3">
                         <a href="tel:+13174562564" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mobile-alt text-muted mr-2"></i> +1 313-779-4314</a>
+                            <i class="fas fa-mobile-alt text-muted mr-2"></i> <?php echo $items ['phone']?></a>
                         <a href="mailto:oliver.kopyov@smartadminwebapp.com" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> jimmy.fallan@smartadminwebapp.com</a>
+                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> <?php echo $items ['email']?></a>
                         <address class="fs-sm fw-400 mt-4 text-muted">
-                            <i class="fas fa-map-pin mr-2"></i> 55 Smyth Rd, Detroit, MI, 48341, USA
+                            <i class="fas fa-map-pin mr-2"></i> <?php echo $items ['addres']?>
                         </address>
                         <div class="d-flex flex-row">
                             <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#3b5998">
@@ -503,17 +504,17 @@ $items = [[
             </div>
         </div>
         <div class="col-xl-4">
-            <div id="c_8" class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="arica grace">
+            <div id="<?php echo $items ['id']?>" class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="<?php echo $items ['name_fitler']?>">
                 <div class="card-body border-faded border-top-0 border-left-0 border-right-0 rounded-top">
                     <div class="d-flex flex-row align-items-center">
-                                <span class="status status-success mr-3">
+                                <span class="<?php echo $items ['status']?>">
                                     <span class="rounded-circle profile-image d-block "
-                                          style="background-image:url('img/demo/avatars/avatar-j.png'); background-size: cover;"></span>
+                                          style="background-image:url('<?php echo $items ['avvatar']?>'); background-size: cover;"></span>
                                 </span>
                         <div class="info-card-text flex-1">
                             <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
                                data-toggle="dropdown" aria-expanded="false">
-                                Arica Grace
+                                <?php echo $items ['name_surname']?>
                                 <i class="fal fa-angle-down d-inline-block ml-1 fs-md"></i>
                             </a>
                             <div class="dropdown-menu">
@@ -521,7 +522,7 @@ $items = [[
                                 <a class="dropdown-item" href="#">Create Appointment</a>
                                 <a class="dropdown-item" href="#">Block User</a>
                             </div>
-                            <span class="text-truncate text-truncate-xl">Accounting, Gotbootstrap Inc.</span>
+                            <span class="text-truncate text-truncate-xl"><?php echo $items ['jods']?></span>
                         </div>
                         <button class="js-expand-btn btn btn-sm btn-default d-none waves-effect waves-themed"
                                 data-toggle="collapse" data-target="#c_8 > .card-body + .card-body"
@@ -534,11 +535,11 @@ $items = [[
                 <div class="card-body p-0 collapse show">
                     <div class="p-3">
                         <a href="tel:+13174562564" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mobile-alt text-muted mr-2"></i> +1 313-779-3347</a>
+                            <i class="fas fa-mobile-alt text-muted mr-2"></i> <?php echo $items ['phone']?></a>
                         <a href="mailto:oliver.kopyov@smartadminwebapp.com" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> arica.grace@smartadminwebapp.com</a>
+                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> <?php echo $items ['email']?></a>
                         <address class="fs-sm fw-400 mt-4 text-muted">
-                            <i class="fas fa-map-pin mr-2"></i> 798 Smyth Rd, Detroit, MI, 48341, USA
+                            <i class="fas fa-map-pin mr-2"></i> <?php echo $items ['addres']?>
                         </address>
                         <div class="d-flex flex-row">
                             <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#3b5998">
@@ -557,7 +558,7 @@ $items = [[
         </div>
     </div>
 </main>
-
+<?php } ?>
 
 <script src="js/vendors.bundle.js"></script>
 <script src="js/app.bundle.js"></script>
