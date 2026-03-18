@@ -30,12 +30,27 @@
                             <button class="btn btn-panel waves-effect waves-themed" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
                         </div>
                     </div>
+                    <?php
+                    $items= [
+                            [
+                            'features'=>'Функции',
+                    ],
+                        [
+                                'home'=>'Главная',
+                                ],
+                        [
+                                'php'=>'PHP',
+                        ],
+                    ];
+                    ?>
+                    <?php foreach ($items as $item){?>
                     <div class="panel-container show">
                         <div class="panel-content">
                             <ol class="breadcrumb page-breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                                <li class="breadcrumb-item"><a href="#">PHP</a></li>
-                                <li class="breadcrumb-item active">Функции</li>
+                                <li class="breadcrumb-item"><a href="#"><?php echo $items['home'] ?></a></li>
+                                <li class="breadcrumb-item"><a href="#"><?php echo $items['php'] ?></a></li>
+                                <li class="breadcrumb-item active"><?php echo $items['features'] ?></li>
+                                <?php } ?>
                             </ol>
                         </div>
                     </div>
