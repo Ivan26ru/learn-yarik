@@ -34,6 +34,31 @@
                         <div class="panel-content">
                             <h5 class="frame-heading">
                                 Обычная таблица
+                                <?php
+                                $items= [
+                                        [
+                                                'frist Name'=>'Mark',
+                                                'last name'=>'Otto',
+                                                'username'=>'@mdo',
+                                        ],
+                                    [
+                                            'frist Name'=>'Jacob',
+                                            'last name'=>'Thornton',
+                                            'username'=>'@fat',
+                                    ],
+                                    [
+                                            'frist Name'=>'Larry',
+                                            'last name'=>'the Bird',
+                                            'username'=>'@twitter',
+                                    ],
+                                        [
+                                                'frist Name'=>'Larry the Bird ',
+                                                'last name'=>' Bird',
+                                                'username'=>'@twitter',
+                                        ]
+                                ];
+                                ?>
+                                <?php foreach ($items as $item){?>
                             </h5>
                             <div class="frame-wrap">
                                 <table class="table m-0">
@@ -49,9 +74,9 @@
                                     <tbody>
                                         <tr>
                                             <th scope="row">1</th>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
+                                            <td><?php echo $items ['frist name'] ?> </td>
+                                            <td><?php echo $items ['last name'] ?></td>
+                                            <td><?php echo $items ['username'] ?></td>
                                             <td>
                                                 <a href="show.php?id=" class="btn btn-info">Редактировать</a>
                                                 <a href="edit.php?id=" class="btn btn-warning">Изменить</a>
@@ -60,9 +85,9 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">2</th>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
+                                            <td><?php echo $items ['frist name'] ?></td>
+                                            <td><?php echo $items ['last name'] ?></td>
+                                            <td><?php echo $items ['username'] ?></td>
                                             <td>
                                                 <a href="show.php?id=" class="btn btn-info">Редактировать</a>
                                                 <a href="edit.php?id=" class="btn btn-warning">Изменить</a>
@@ -71,9 +96,9 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">3</th>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
+                                            <td><?php echo $items ['frist name'] ?></td>
+                                            <td><?php echo $items ['last name'] ?></td>
+                                            <td><?php echo $items ['username'] ?></td>
                                             <td>
                                                 <a href="show.php?id=" class="btn btn-info">Редактировать</a>
                                                 <a href="edit.php?id=" class="btn btn-warning">Изменить</a>
@@ -82,9 +107,9 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">4</th>
-                                            <td>Larry the Bird</td>
-                                            <td> Bird</td>
-                                            <td>@twitter</td>
+                                            <td><?php echo $items ['frist name'] ?></td>
+                                            <td><?php echo $items ['last name'] ?></td>
+                                            <td><?php echo $items [ 'username'] ?></td>
                                             <td>
                                                 <a href="show.php?id=" class="btn btn-info">Редактировать</a>
                                                 <a href="edit.php?id=" class="btn btn-warning">Изменить</a>
@@ -99,7 +124,7 @@
                 </div>
             </div>
         </main>
-        
+        <?php } ?>
 
         <script src="js/vendors.bundle.js"></script>
         <script src="js/app.bundle.js"></script>
