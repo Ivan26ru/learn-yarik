@@ -111,7 +111,7 @@ $items = [[
 
 
 ?>
-<?php foreach ($items as $item){ ?>
+
 <body class="mod-bg-1 mod-nav-link ">
 <main id="js-page-content" role="main" class="page-content">
     <div class="row">
@@ -131,19 +131,20 @@ $items = [[
             </div>
         </div>
     </div>
+    <?php foreach ($items as $item){ ?>
     <div class="row js-list-filter" id="js-contacts">
         <div class="col-xl-4">
-            <div id="<?php echo $items ['id']?>"class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="<?php echo $items ['name_fitler']?>">
+            <div id="<?php echo $item['id']?>"class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="<?php echo $item['name_fitler']?>">
                 <div class="card-body border-faded border-top-0 border-left-0 border-right-0 rounded-top">
                     <div class="d-flex flex-row align-items-center">
-                                <span class="<?php echo $items ['status']?>">
+                                <span class="<?php echo $item['status']?>">
                                     <span class="rounded-circle profile-image d-block "
-                                          style="background-image:url('<?php echo $items ['avvatar']?>'); background-size: cover;"></span>
+                                          style="background-image:url('<?php echo $item['avatar']?>'); background-size: cover;"></span>
                                 </span>
                         <div class="info-card-text flex-1">
                             <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
                                data-toggle="dropdown" aria-expanded="false">
-                                <?php echo $items ['name_surname']?>
+                                <?php echo $item['name_surname']?>
                                 <i class="fal fa-angle-down d-inline-block ml-1 fs-md"></i>
                             </a>
                             <div class="dropdown-menu">
@@ -151,7 +152,7 @@ $items = [[
                                 <a class="dropdown-item" href="#">Create Appointment</a>
                                 <a class="dropdown-item" href="#">Block User</a>
                             </div>
-                            <span class="text-truncate text-truncate-xl"><?php echo $items ['jods']?></span>
+                            <span class="text-truncate text-truncate-xl"><?php echo $item['jobs']?></span>
                         </div>
                         <button class="js-expand-btn btn btn-sm btn-default d-none waves-effect waves-themed"
                                 data-toggle="collapse" data-target="#c_1 > .card-body + .card-body"
@@ -164,11 +165,11 @@ $items = [[
                 <div class="card-body p-0 collapse show">
                     <div class="p-3">
                         <a href="tel:+13174562564" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mobile-alt text-muted mr-2"></i> <?php echo $items ['phone']?></a>
+                            <i class="fas fa-mobile-alt text-muted mr-2"></i> <?php echo $item['phone']?></a>
                         <a href="mailto:oliver.kopyov@smartadminwebapp.com" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> <?php echo $items ['email']?></a>
+                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> <?php echo $item['emil']?></a>
                         <address class="fs-sm fw-400 mt-4 text-muted">
-                            <i class="fas fa-map-pin mr-2"><?php echo $items ['addres']?></i>
+                            <i class="fas fa-map-pin mr-2"><?php echo $item['address']?></i>
                         </address>
                         <div class="d-flex flex-row">
                             <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#3b5998">
@@ -179,377 +180,7 @@ $items = [[
                             </a>
                             <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#0077B5">
                                 <i class="fab fa-linkedin"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-4">
-            <div id="<?php echo $items ['id']?>"class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="<?php echo $items ['name_fitler']?>">
-                <div class="card-body border-faded border-top-0 border-left-0 border-right-0 rounded-top">
-                    <div class="d-flex flex-row align-items-center">
-                                <span class="<?php echo $items ['status']?>">
-                                    <span class="rounded-circle profile-image d-block "
-                                          style="background-image:url('<?php echo $items ['avvatar']?>'); background-size: cover;"></span>
-                                </span>
-                        <div class="info-card-text flex-1">
-                            <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
-                               data-toggle="dropdown" aria-expanded="false">
-                                <?php echo $items ['name_surname']?>
-                                <i class="fal fa-angle-down d-inline-block ml-1 fs-md"></i>
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Send Email</a>
-                                <a class="dropdown-item" href="#">Create Appointment</a>
-                                <a class="dropdown-item" href="#">Block User</a>
-                            </div>
-                            <span class="text-truncate text-truncate-xl"><?php echo $items ['jods']?></span>
-                        </div>
-                        <button class="js-expand-btn btn btn-sm btn-default d-none waves-effect waves-themed"
-                                data-toggle="collapse" data-target="#c_2 > .card-body + .card-body"
-                                aria-expanded="false">
-                            <span class="collapsed-hidden">+</span>
-                            <span class="collapsed-reveal">-</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="card-body p-0 collapse show">
-                    <div class="p-3">
-                        <a href="tel:+13174562564" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mobile-alt text-muted mr-2"></i> <?php echo $items ['phone']?></a>
-                        <a href="mailto:oliver.kopyov@smartadminwebapp.com" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> <?php echo $items ['email']?></a>
-                        <address class="fs-sm fw-400 mt-4 text-muted">
-                            <i class="fas fa-map-pin mr-2"><?php echo $items ['addres']?></i>
-                        </address>
-                        <div class="d-flex flex-row">
-                            <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#3b5998">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                            <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#38A1F3">
-                                <i class="fab fa-twitter-square"></i>
-                            </a>
-                            <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#0077B5">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-4">
-            <div  id="<?php echo $items ['id']?>" class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="<?php echo $items ['name_fitler']?>">
-                <div class="card-body border-faded border-top-0 border-left-0 border-right-0 rounded-top">
-                    <div class="d-flex flex-row align-items-center">
-                                <span class="<?php echo $items ['status']?>">
-                                    <span class="rounded-circle profile-image d-block "
-                                          style="background-image:url(<?php echo $items ['avvatar']?>'); background-size: cover;"></span>
-                                </span>
-                        <div class="info-card-text flex-1">
-                            <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
-                               data-toggle="dropdown" aria-expanded="false">
-                                <?php echo $items ['name_surname']?>
-                                <i class="fal fa-angle-down d-inline-block ml-1 fs-md"></i>
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Send Email</a>
-                                <a class="dropdown-item" href="#">Create Appointment</a>
-                                <a class="dropdown-item" href="#">Block User</a>
-                            </div>
-                            <span class="text-truncate text-truncate-xl"><?php echo $items ['jods']?></span>
-                        </div>
-                        <button class="js-expand-btn btn btn-sm btn-default d-none waves-effect waves-themed"
-                                data-toggle="collapse" data-target="#c_3 > .card-body + .card-body"
-                                aria-expanded="false">
-                            <span class="collapsed-hidden">+</span>
-                            <span class="collapsed-reveal">-</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="card-body p-0 collapse show">
-                    <div class="p-3">
-                        <a href="tel:+13174562564" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mobile-alt text-muted mr-2"></i> <?php echo $items ['phone']?></a>
-                        <a href="mailto:oliver.kopyov@smartadminwebapp.com" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> <?php echo $items ['email']?></a>
-                        <address class="fs-sm fw-400 mt-4 text-muted">
-                            <i class="fas fa-map-pin mr-2"></i> <?php echo $items ['addres']?>
-                        </address>
-                        <div class="d-flex flex-row">
-                            <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#3b5998">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                            <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#38A1F3">
-                                <i class="fab fa-twitter-square"></i>
-                            </a>
-                            <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#0077B5">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-4">
-            <div  id="<?php echo $items ['id']?>" class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="<?php echo $items ['name_fitler']?>">
-                <div class="card-body border-faded border-top-0 border-left-0 border-right-0 rounded-top">
-                    <div class="d-flex flex-row align-items-center">
-                                <span class="<?php echo $items ['status']?>">
-                                    <span class="rounded-circle profile-image d-block "
-                                          style="background-image:url('<?php echo $items ['avvatar']?>'); background-size: cover;"></span>
-                                </span>
-                        <div class="info-card-text flex-1">
-                            <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
-                               data-toggle="dropdown" aria-expanded="false">
-                                <?php echo $items ['name_surname']?>
-                                <i class="fal fa-angle-down d-inline-block ml-1 fs-md"></i>
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Send Email</a>
-                                <a class="dropdown-item" href="#">Create Appointment</a>
-                                <a class="dropdown-item" href="#">Block User</a>
-                            </div>
-                            <span class="text-truncate text-truncate-xl"><?php echo $items ['jods']?></span>
-                        </div>
-                        <button class="js-expand-btn btn btn-sm btn-default d-none waves-effect waves-themed"
-                                data-toggle="collapse" data-target="#c_4 > .card-body + .card-body"
-                                aria-expanded="false">
-                            <span class="collapsed-hidden">+</span>
-                            <span class="collapsed-reveal">-</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="card-body p-0 collapse show">
-                    <div class="p-3">
-                        <a href="tel:+13174562564" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mobile-alt text-muted mr-2"></i> <?php echo $items ['phone']?></a>
-                        <a href="mailto:oliver.kopyov@smartadminwebapp.com" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> <?php echo $items ['email']?></a>
-                        <address class="fs-sm fw-400 mt-4 text-muted">
-                            <i class="fas fa-map-pin mr-2"></i> <?php echo $items ['addres']?>
-                        </address>
-                        <div class="d-flex flex-row">
-                            <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#3b5998">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                            <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#38A1F3">
-                                <i class="fab fa-twitter-square"></i>
-                            </a>
-                            <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#0077B5">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-4">
-            <div id="<?php echo $items ['id']?>" class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="<?php echo $items ['name_fitler']?>">
-                <div class="card-body border-faded border-top-0 border-left-0 border-right-0 rounded-top">
-                    <div class="d-flex flex-row align-items-center">
-                                <span class="<?php echo $items ['status']?>">
-                                    <span class="rounded-circle profile-image d-block "
-                                          style="background-image:url('<?php echo $items ['avvatar']?>'); background-size: cover;"></span>
-                                </span>
-                        <div class="info-card-text flex-1">
-                            <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
-                               data-toggle="dropdown" aria-expanded="false">
-                                <?php echo $items ['name_surname']?>
-                                <i class="fal fa-angle-down d-inline-block ml-1 fs-md"></i>
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Send Email</a>
-                                <a class="dropdown-item" href="#">Create Appointment</a>
-                                <a class="dropdown-item" href="#">Block User</a>
-                            </div>
-                            <span class="text-truncate text-truncate-xl"><?php echo $items ['jods']?></span>
-                        </div>
-                        <button class="js-expand-btn btn btn-sm btn-default d-none waves-effect waves-themed"
-                                data-toggle="collapse" data-target="#c_5 > .card-body + .card-body"
-                                aria-expanded="false">
-                            <span class="collapsed-hidden">+</span>
-                            <span class="collapsed-reveal">-</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="card-body p-0 collapse show">
-                    <div class="p-3">
-                        <a href="tel:+13174562564" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mobile-alt text-muted mr-2"></i> <?php echo $items ['phone']?></a>
-                        <a href="mailto:oliver.kopyov@smartadminwebapp.com" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> <?php echo $items ['email']?></a>
-                        <address class="fs-sm fw-400 mt-4 text-muted">
-                            <i class="fas fa-map-pin mr-2"></i> <?php echo $items ['addres']?>
-                        </address>
-                        <div class="d-flex flex-row">
-                            <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#3b5998">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                            <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#38A1F3">
-                                <i class="fab fa-twitter-square"></i>
-                            </a>
-                            <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#0077B5">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-4">
-            <div id="<?php echo $items ['id']?>" class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="<?php echo $items ['name_fitler']?>">
-                <div class="card-body border-faded border-top-0 border-left-0 border-right-0 rounded-top">
-                    <div class="d-flex flex-row align-items-center">
-                                <span class="<?php echo $items ['status']?>">
-                                    <span class="rounded-circle profile-image d-block "
-                                          style="background-image:url('<?php echo $items ['avvatar']?>'); background-size: cover;"></span>
-                                </span>
-                        <div class="info-card-text flex-1">
-                            <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
-                               data-toggle="dropdown" aria-expanded="false">
-                                <?php echo $items ['name_surname']?>
-                                <i class="fal fa-angle-down d-inline-block ml-1 fs-md"></i>
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Send Email</a>
-                                <a class="dropdown-item" href="#">Create Appointment</a>
-                                <a class="dropdown-item" href="#">Block User</a>
-                            </div>
-                            <span class="text-truncate text-truncate-xl"><?php echo $items ['jods']?></span>
-                        </div>
-                        <button class="js-expand-btn btn btn-sm btn-default d-none waves-effect waves-themed"
-                                data-toggle="collapse" data-target="#c_6 > .card-body + .card-body"
-                                aria-expanded="false">
-                            <span class="collapsed-hidden">+</span>
-                            <span class="collapsed-reveal">-</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="card-body p-0 collapse show">
-                    <div class="p-3">
-                        <a href="tel:+13174562564" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mobile-alt text-muted mr-2"></i> <?php echo $items ['phone']?></a>
-                        <a href="mailto:oliver.kopyov@smartadminwebapp.com" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> <?php echo $items ['email']?></a>
-                        <address class="fs-sm fw-400 mt-4 text-muted">
-                            <i class="fas fa-map-pin mr-2"></i> <?php echo $items ['addres']?>
-                        </address>
-                        <div class="d-flex flex-row">
-                            <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#3b5998">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                            <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#38A1F3">
-                                <i class="fab fa-twitter-square"></i>
-                            </a>
-                            <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#0077B5">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-4">
-            <div id="<?php echo $items ['id']?>" class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="<?php echo $items ['name_fitler']?>">
-                <div class="card-body border-faded border-top-0 border-left-0 border-right-0 rounded-top">
-                    <div class="d-flex flex-row align-items-center">
-                                <span class="<?php echo $items ['status']?>">
-                                    <span class="rounded-circle profile-image d-block "
-                                          style="background-image:url('<?php echo $items ['avvatar']?>'); background-size: cover;"></span>
-                                </span>
-                        <div class="info-card-text flex-1">
-                            <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
-                               data-toggle="dropdown" aria-expanded="false">
-                                <?php echo $items ['name_surname']?>
-                                <i class="fal fa-angle-down d-inline-block ml-1 fs-md"></i>
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Send Email</a>
-                                <a class="dropdown-item" href="#">Create Appointment</a>
-                                <a class="dropdown-item" href="#">Block User</a>
-                            </div>
-                            <span class="text-truncate text-truncate-xl"><?php echo $items ['jods']?></span>
-                        </div>
-                        <button class="js-expand-btn btn btn-sm btn-default d-none waves-effect waves-themed"
-                                data-toggle="collapse" data-target="#c_7 > .card-body + .card-body"
-                                aria-expanded="false">
-                            <span class="collapsed-hidden">+</span>
-                            <span class="collapsed-reveal">-</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="card-body p-0 collapse show">
-                    <div class="p-3">
-                        <a href="tel:+13174562564" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mobile-alt text-muted mr-2"></i> <?php echo $items ['phone']?></a>
-                        <a href="mailto:oliver.kopyov@smartadminwebapp.com" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> <?php echo $items ['email']?></a>
-                        <address class="fs-sm fw-400 mt-4 text-muted">
-                            <i class="fas fa-map-pin mr-2"></i> <?php echo $items ['addres']?>
-                        </address>
-                        <div class="d-flex flex-row">
-                            <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#3b5998">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                            <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#38A1F3">
-                                <i class="fab fa-twitter-square"></i>
-                            </a>
-                            <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#0077B5">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-4">
-            <div id="<?php echo $items ['id']?>" class="card border shadow-0 mb-g shadow-sm-hover" data-filter-tags="<?php echo $items ['name_fitler']?>">
-                <div class="card-body border-faded border-top-0 border-left-0 border-right-0 rounded-top">
-                    <div class="d-flex flex-row align-items-center">
-                                <span class="<?php echo $items ['status']?>">
-                                    <span class="rounded-circle profile-image d-block "
-                                          style="background-image:url('<?php echo $items ['avvatar']?>'); background-size: cover;"></span>
-                                </span>
-                        <div class="info-card-text flex-1">
-                            <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
-                               data-toggle="dropdown" aria-expanded="false">
-                                <?php echo $items ['name_surname']?>
-                                <i class="fal fa-angle-down d-inline-block ml-1 fs-md"></i>
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Send Email</a>
-                                <a class="dropdown-item" href="#">Create Appointment</a>
-                                <a class="dropdown-item" href="#">Block User</a>
-                            </div>
-                            <span class="text-truncate text-truncate-xl"><?php echo $items ['jods']?></span>
-                        </div>
-                        <button class="js-expand-btn btn btn-sm btn-default d-none waves-effect waves-themed"
-                                data-toggle="collapse" data-target="#c_8 > .card-body + .card-body"
-                                aria-expanded="false">
-                            <span class="collapsed-hidden">+</span>
-                            <span class="collapsed-reveal">-</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="card-body p-0 collapse show">
-                    <div class="p-3">
-                        <a href="tel:+13174562564" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mobile-alt text-muted mr-2"></i> <?php echo $items ['phone']?></a>
-                        <a href="mailto:oliver.kopyov@smartadminwebapp.com" class="mt-1 d-block fs-sm fw-400 text-dark">
-                            <i class="fas fa-mouse-pointer text-muted mr-2"></i> <?php echo $items ['email']?></a>
-                        <address class="fs-sm fw-400 mt-4 text-muted">
-                            <i class="fas fa-map-pin mr-2"></i> <?php echo $items ['addres']?>
-                        </address>
-                        <div class="d-flex flex-row">
-                            <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#3b5998">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                            <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#38A1F3">
-                                <i class="fab fa-twitter-square"></i>
-                            </a>
-                            <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#0077B5">
-                                <i class="fab fa-linkedin"></i>
+
                             </a>
                         </div>
                     </div>
