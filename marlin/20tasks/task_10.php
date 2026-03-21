@@ -31,14 +31,25 @@
                             <button class="btn btn-panel waves-effect waves-themed" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
                         </div>
                     </div>
+                    <?php
+                    $items=[
+                            [
+                                    'text'=>'Text',
+                                    'submit'=>'Submit'
+                            ],
+                    ]
+                    ?>
+
                     <div class="panel-container show">
                         <div class="panel-content">
                             <div class="panel-content">
                                 <div class="form-group">
                                     <form action="">
-                                        <label class="form-label" for="simpleinput">Text</label>
+                                        <?php foreach ($items as $item) { ?>
+                                        <label class="form-label" for="simpleinput"><?php echo $item['text']?></label>
                                         <input type="text" id="simpleinput" class="form-control">
-                                        <button class="btn btn-success mt-3">Submit</button>
+                                        <button class="btn btn-success mt-3"><?php echo $item['submit']?></button>
+                                        <?php } ?>
                                     </form>
                                 </div>
                             </div>
