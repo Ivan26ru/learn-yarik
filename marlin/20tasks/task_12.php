@@ -32,23 +32,35 @@
                             data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
                 </div>
             </div>
+            <?php
+            $items=[
+                    [
+                            'password'=>'Password',
+                            'email'=>'Email',
+                            'error'=>'Этот эл адрес уже занят другим пользователем,',
+                            'submit'=>'Submit',
+                    ],
+            ];
+            ?>
             <div class="panel-container show">
                 <div class="panel-content">
                     <div class="panel-content">
                         <div class="form-group">
+                            <?php foreach ($items as $item) { ?>
                                 <div class="alert alert-danger fade show" role="alert">
-                                   Этот эл адрес уже занят другим пользователем
+                                    <?php echo $item['error']; ?>
                                 </div>
 
                             <form action="task_11_handler.php" method="post">
                                 <div class="form-group">
-                                    <label class="form-label" for="simpleinput">Email</label>
+                                    <label class="form-label" for="simpleinput"><?php echo $item['email']?></label>
                                     <input type="text" name="email" id="simpleinput" class="form-control">
                                 </div>
 
-                                <label class="form-label" for="simpleinput">Password</label>
+                                <label class="form-label" for="simpleinput"><?php echo $item['password']?></label>
                                 <input type="password" name="password" id="simpleinput" class="form-control">
-                                <button class="btn btn-success mt-3">Submit</button>
+                                <button class="btn btn-success mt-3"><?php echo $item['submit']?></button>
+                                <?php  } ?>
                             </form>
                         </div>
                     </div>
