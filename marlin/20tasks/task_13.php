@@ -31,15 +31,25 @@
                             <button class="btn btn-panel waves-effect waves-themed" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
                         </div>
                     </div>
+                    <?php
+            $items=[
+                    [
+                            'text'=>'Text',
+                    'hint'=>'Ваше сообщение выводится тут',
+                    'submit'=>'Submit',
+                    ],
+                    ];
+                    ?>
                     <div class="panel-container show">
                         <div class="panel-content">
                             <div class="panel-content">
                                 <div class="form-group">
-                                    <div class="alert alert-info">Ваше сообщение выводится тут</div>
+                                    <?php foreach($items as $item) { ?>
+                                    <div class="alert alert-info"><?php echo $item['hint']?></div>
                                     <form action="">
-                                        <label class="form-label" for="simpleinput">Text</label>
+                                        <label class="form-label" for="simpleinput"><?php echo $item['text']?></label>
                                         <input type="text" id="simpleinput" class="form-control">
-                                        <button class="btn btn-success mt-3">Submit</button>
+                                        <button class="btn btn-success mt-3"><?php echo $item['submit']?></button>
                                     </form>
                                 </div>
                             </div>
@@ -48,7 +58,7 @@
                 </div>
             </div>
         </main>
-        
+        <?php } ?>
 
         <script src="js/vendors.bundle.js"></script>
         <script src="js/app.bundle.js"></script>
