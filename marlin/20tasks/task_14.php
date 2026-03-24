@@ -25,6 +25,13 @@
                         <h2>
                             Задание
                         </h2>
+                        <?php
+                        $items=[
+                                [
+                                        'hint'=>'Кнопка была нажата: 0 раз',
+                                        'submit'=>'Submit',
+                                ],
+                        ] ?>
                         <div class="panel-toolbar">
                             <button class="btn btn-panel waves-effect waves-themed" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
                             <button class="btn btn-panel waves-effect waves-themed" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
@@ -34,17 +41,19 @@
                         <div class="panel-content">
                             <div class="panel-content">
                                 <div class="form-group">
+                                    <?php foreach ($items as $item) { ?>
                                     <div class="alert alert-info fade show" role="alert">
-                                        Кнопка была нажата: <b>0</b> раз
+                                        <?php echo $item['hint']; ?>
                                     </div>
                                     <form action="">
-                                        <button class="btn btn-success mt-3">Submit</button>
+                                        <button class="btn btn-success mt-3"><?php echo $item['submit'] ?></button>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <?php } ?>
             </div>
         </main>
         
