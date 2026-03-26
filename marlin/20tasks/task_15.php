@@ -30,27 +30,40 @@
                             <button class="btn btn-panel waves-effect waves-themed" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
                         </div>
                     </div>
+                    <?php
+                    $items=[
+                            [
+                                    'email'=>'Email',
+                                'error'=>'Неверный логин или пароль',
+                                    'submit'=>'Submit',
+                                    'password'=>'Password',
+                            ]
+
+]
+                    ?>
                     <div class="panel-container show">
                         <div class="panel-content">
                             <div class="panel-content">
                                 <div class="form-group">
+                                    <?php foreach ($items as $item) { ?>
                                     <div class="alert alert-danger fade show" role="alert">
-                                        Неверный логин или пароль
+                                        <?php echo $item['error'] ?>
                                     </div>
                                     <form action="">
                                         <div class="form-group">
-                                        	<label class="form-label" for="simpleinput">Email</label>
+                                        	<label class="form-label" for="simpleinput"><?php echo $item['email']?></label>
                                         <input type="text" id="simpleinput" class="form-control">
                                         </div>
 
-                                        <label class="form-label" for="simpleinput">Password</label>
+                                        <label class="form-label" for="simpleinput"><?php echo $item['password']?></label>
                                         <input type="password" id="simpleinput" class="form-control">
-                                        <button class="btn btn-success mt-3">Submit</button>
+                                        <button class="btn btn-success mt-3"><?php echo $item['submit']?></button>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <?php } ?>
                 </div>
             </div>
         </main>
