@@ -30,14 +30,23 @@
                             <button class="btn btn-panel waves-effect waves-themed" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
                         </div>
                     </div>
+                    <?php
+                    $items=[
+                            [
+                                    'name'=>'Здравствуйте, ИМЯ_ПОЛЬЗОВАТЕЛЯ.',
+                                    'exit'=>"выйти",
+                            ]
+                    ]
+                    ?>
                     <div class="panel-container show">
                         <div class="panel-content">
                             <div class="panel-content">
                                 <div class="form-group">
+                                    <?php foreach ($items as $item) { ?>
                                     <div class="alert alert-success fade show" role="alert">
-                                        Здравствуйте, ИМЯ_ПОЛЬЗОВАТЕЛЯ.
+                                        <?php echo $item['name']; ?>
                                     </div>
-                                    <a href="#" class="btn btn-info">Выйти</a>
+                                    <a href="#" class="btn btn-info"><?php echo $item['exit']; ?></a>
                                 </div>
                             </div>
                         </div>
@@ -45,7 +54,7 @@
                 </div>
             </div>
         </main>
-        
+        <?php } ?>
 
         <script src="js/vendors.bundle.js"></script>
         <script src="js/app.bundle.js"></script>
