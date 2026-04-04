@@ -27,6 +27,18 @@
                         <div class="panel-hdr">
                             <h2>
                                 Задание
+                                <?php
+                                $items=[
+                                 [
+                                         'img'=>'img/demo/gallery/1.jpg',
+                                 ],
+                                    [
+                                            'img'=>'img/demo/gallery/2.jpg',
+                                    ],
+                                    [
+                                            'img'=>'img/demo/gallery/3.jpg',
+                                    ]
+                                ]?>
                             </h2>
                             <div class="panel-toolbar">
                                 <button class="btn btn-panel waves-effect waves-themed" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
@@ -38,6 +50,7 @@
                                 <div class="panel-content">
                                     <div class="form-group">
                                         <form action="">
+                                            <?php foreach ($items as $item) { ?>
                                             <div class="form-group">
                                                 <label class="form-label" for="simpleinput">Image</label>
                                             <input type="file" id="simpleinput" class="form-control">
@@ -64,19 +77,8 @@
                         </div>
                         <div class="panel-container show">
                             <div class="panel-content">
-                                <div class="panel-content image-gallery">
-                                    <div class="row">
-                                        <div class="col-md-3 image">
-                                            <img src="img/demo/gallery/1.jpg">
-                                        </div>
-
-                                        <div class="col-md-3 image">
-                                            <img src="img/demo/gallery/2.jpg">
-                                        </div>
-
-                                        <div class="col-md-3 image">
-                                            <img src="img/demo/gallery/3.jpg">
-                                        </div>
+                                <div class="<?php echo$item['img']?>">
+                                  <?php } ?>
                                     </div>
                                 </div>
                             </div>
