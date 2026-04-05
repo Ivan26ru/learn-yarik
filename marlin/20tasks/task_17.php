@@ -29,16 +29,26 @@
                                 Задание
                                 <?php
                                 $items=[
-                                 [
-                                         'img'=>'img/demo/gallery/1.jpg',
-                                 ],
+                                        [
+                                                'img'=>'img/demo/gallery/1.jpg'
+                                        ],
                                     [
-                                            'img'=>'img/demo/gallery/2.jpg',
+                                            'img'=>'img/demo/gallery/2.jpg'
                                     ],
                                     [
-                                            'img'=>'img/demo/gallery/3.jpg',
+                                            'img'=>'img/demo/gallery/3.jpg'
                                     ]
-                                ]?>
+                                ]
+                                ?>
+                                <?php
+                                $itemd=[
+                                        [
+                                      'submit'=>'Submit',
+                                    'image'=>'Image',
+                                    'Uploaded images'=>'Загруженные картинки',
+                                ],
+                                ]
+                                ?>
                             </h2>
                             <div class="panel-toolbar">
                                 <button class="btn btn-panel waves-effect waves-themed" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
@@ -50,12 +60,12 @@
                                 <div class="panel-content">
                                     <div class="form-group">
                                         <form action="">
-                                            <?php foreach ($items as $item) { ?>
+                                            <?php foreach ($itemd as $item) { ?>
                                             <div class="form-group">
-                                                <label class="form-label" for="simpleinput">Image</label>
+                                                <label class="form-label" for="simpleinput"><?php echo $item['image']?></label>
                                             <input type="file" id="simpleinput" class="form-control">
                                             </div>
-                                            <button class="btn btn-success mt-3">Submit</button>
+                                            <button class="btn btn-success mt-3"><?php echo $item['submit']?></button>
                                         </form>
                                     </div>
                                 </div>
@@ -68,20 +78,28 @@
                     <div id="panel-1" class="panel">
                         <div class="panel-hdr">
                             <h2>
-                                Загруженные картинки
+                                <?php echo $item['Uploaded images']?>
                             </h2>
                             <div class="panel-toolbar">
                                 <button class="btn btn-panel waves-effect waves-themed" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
                                 <button class="btn btn-panel waves-effect waves-themed" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
                             </div>
                         </div>
+                        <?php } ?>
+                        <?php foreach ($items as $item) { ?>
                         <div class="panel-container show">
                             <div class="panel-content">
-                                <div class="<?php echo$item['img']?>">
-                                  <?php } ?>
+                                <div class="panel-content image-gallery">
+                                    <div class="row">
+                                        <div class="col-md-3 image">
+                                            <img src="<?php echo $item['img'] ?>">
+                                        </div>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <?php } ?>
                         </div>
                     </div>
                 </div>
