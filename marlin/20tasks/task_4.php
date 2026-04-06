@@ -74,30 +74,6 @@
                         <a class="" href="<?php echo $item['imgGallery']; ?>">
                             <img class="img-responsive" src="<?php echo $item['imgThumb']; ?>" alt="image">
                         </a>
-
-                        <?php foreach ($albom
-
-                        as $item){ ?>
-                        <a class="" href="<?php echo $item['imgGallery']; ?>">
-                            <img class="img-responsive" src="<?php echo $item['imgThumb']; ?>" alt="image">
-                        </a>
-                        <?php foreach ($albom
-                        as $item){ ?>
-                        <a class="" href="<?php echo $item['imgGallery']; ?>">
-                            <img class="img-responsive" src="<?php echo $item['imgThumb']; ?>" alt="image">
-                        </a><?php foreach ($albom
-                        as $item){ ?>
-                        <a class="" href="<?php echo $item['imgGallery']; ?>">
-                            <img class="img-responsive" src="<?php echo $item['imgThumb']; ?>" alt="image">
-                        </a><?php foreach ($albom
-                        as $item){ ?>
-                        <a class="" href="<?php echo $item['imgGallery']; ?>">
-                            <img class="img-responsive" src="<?php echo $item['imgThumb']; ?>" alt="image">
-                        </a><?php foreach ($albom
-                        as $item){ ?>
-                        <a class="" href="<?php echo $item['imgGallery']; ?>">
-                            <img class="img-responsive" src="<?php echo $item['imgThumb']; ?>" alt="image">
-                        </a>
                     <?php } ?>
 
                     </div>
