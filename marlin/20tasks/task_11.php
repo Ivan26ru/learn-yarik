@@ -33,28 +33,22 @@
                 </div>
             </div>
             <?php
-            $items = [
-                    [
-                            'text' => 'Text',
-                            'submit' => 'Submit',
-                            'error'=>'You should check in on some of those fields below.'
-                    ],
-            ]
+				$text  = 'Text';
+				$submit  = 'Submit';
+				$error ='You should check in on some of those fields below.';
             ?>
             <div class="panel-container show">
                 <div class="panel-content">
                     <div class="panel-content">
                         <div class="form-group">
                             <div class="alert alert-danger fade show" role="alert">
-                                <?php foreach ($items as $item) { ?>
-                                <?php echo $item['error'] ?>
+                                <?php echo $error;  ?>
                             </div>
                             <form action="">
-                                <label class="form-label" for="simpleinput"><?php echo $item['text']?></label>
+                                <label class="form-label" for="simpleinput"><?php echo $text; ?></label>
                                 <input type="text" id="simpleinput" class="form-control">
-                                <button class="btn btn-success mt-3"><?php echo $item['submit']?></button>
+                                <button class="btn btn-success mt-3"><?php echo $submit; ?></button>
                             </form>
-                            <?php } ?>
                         </div>
                     </div>
                 </div>
