@@ -44,7 +44,7 @@
                             <div class="alert alert-danger fade show" role="alert">
                                 <?php echo $error;  ?>
                             </div>
-                            <form action="">
+                            <form action="store11.php">
                                 <label class="form-label" for="simpleinput"><?php echo $text; ?></label>
                                 <input type="text" id="simpleinput" class="form-control">
                                 <button class="btn btn-success mt-3"><?php echo $submit; ?></button>
