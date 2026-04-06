@@ -91,103 +91,11 @@
                                         <?php echo $item ['job']?>
                                     </small>
                                 </h5>
-                                <?php
-                                $list = [
-                                        [
-                                                'name' => 'Jos K',
-                                                'job' => ' Partnet &amp; Contributor',
-                                                'username' => '@atlantz',
-                                                'twitter' => 'https://twitter.com/@atlantez',
-                                                'wrapbootstrap' => 'wrapbootstrap.com/user/Walapa',
-                                                'name2' => '(ASP.NET Developer)',
-                                                'title' => "Contact Jos",
-                                                'foto' => 'img/demo/authors/josh.png'
-                                        ], [
-                                                'name' => 'Sunny A',
-                                                'job' => 'Lead Author',
-                                                'username' => '@myplaneticket',
-                                                'twitter' => 'https://twitter.com/@myplaneticket',
-                                                'wrapbootstrap' => 'https://wrapbootstrap.com/user/myorange',
-                                                'name2' => '(UI/UX Expert)',
-                                                'title' => "Contact Sunny",
-                                                'foto' => "img/demo/authors/sunny.png",
-                                        ],[
-                                                'name'=> 'Jovanni L',
-                                            'job' => 'Partner &amp; Contributor',
-                                            'username' => '@lodev09',
-                                            'twitter' => 'https://twitter.com/lodev09',
-                                            'wrapbootstrap' => 'https://wrapbootstrap.com/user/lodev09',
-                                            'name2' => '(PHP Developer)',
-                                            'title' => "Contact Jovanni",
-                                            'foto' => "img/demo/authors/jovanni.png",
-                                        ],[
-                                                'name' => 'Roberto R',
-                                            'job' => ' Partnet &amp; Contributor',
-                                            'username' => '@sildur',
-                                            'twitter' => 'https://twitter.com/sildur',
-                                            'wrapbootstrap' => 'https://wrapbootstrap.com/user/sildur',
-                                            'name2' => '(Rails Developer)',
-                                            'title' => "Contact Roberto",
-                                            'foto' => "img/demo/authors/roberto.png",
-                                        ]
-
-
-                                ];
-
-                                ?>
-
-
-
                         <a class="text-info fs-sm"<?php echo $item['wrabootstarp'] ?>></a>
                               <a> title="Contact Sunny"<?php echo $item ['title']?>><i class="fal fa-envelope"></i></a>
                             </div>
                         </div>
-                        <div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                            <img <?php echo $item ['foto']?><?php echo $item['name'] ?>
-                                 class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
-                            <div class="ml-2 mr-3">
-                                <h5 class="m-0">
-                                    <?php echo $item['name2'] ?>
-                                    <small class="m-0 fw-300">
-                                        <?php echo $item ['job'] ?>
-                                    </small>
-                                </h5>
-                                <a <?php echo $item ['twitter'] ?> class="text-info fs-sm" target="_blank"><?php echo ['username']?> </a>
-                                -
-                                <a<?php echo $item['wrabootstarp']?> class="text-info fs-sm" target="_blank"
-                                   <?php echo $item ['title']?>><i class="fal fa-envelope"></i></a>
-                            </div>
-                        </div>
-                        <div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                            <img <?php echo $item ['foto']?><?php echo $item['name'] ?>
-                           <a> class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
-                            <div class="ml-2 mr-3">
-                                <h5 class="m-0">
-                                    <?php echo $item['name2'] ?>
-                                    <small class="m-0 fw-300">
-                                        <?php echo $item ['job'] ?>
-                                    </small>
-                                </h5>
-                                <a <?php echo  $item ['twitter']?>class="text-info fs-sm"
-                               <?php echo $item['wrabootstarp']?> target="_blank"><?php echo ['username']?></a>
-                                <a  class="text-info fs-sm" target="_blank"
-                                   <?php echo $item ['title'] ?>><i class="fal fa-envelope"></i></a>
-                            </div>
-                        </div>
-                        <div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                            <img <?php echo $item ['foto']?><?php echo $item['name'] ?>></img>
-                               <a  class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
-                            <div class="ml-2 mr-3">
-                                <h5 class="m-0">
-                                    <?php echo $item['name2'] ?>
-                                    <small class="m-0 fw-300">
-                                        <?php echo $item ['job'] ?>
-                                    </small>
-                                </h5>
-                                <a <?php echo $item ['twitter'] ?>class="text-info fs-sm"
-                                   target="_blank"></a>
-                                <a <?php echo $item['wrabootstarp']?> class="text-info fs-sm" target="_blank"<?php echo ['username']?>
-                                        <?php echo $item ['title'] ?>><i class="fal fa-envelope"></i></a>
+
                                 <?php } ?>
                             </div>
                         </div>
