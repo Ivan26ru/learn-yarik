@@ -46,7 +46,7 @@
                             </div>
                             <form action="store11.php" method="post">
                                 <label class="form-label" for="simpleinput"><?php echo $text; ?></label>
-                                <input name='text' type="text" id="simpleinput" class="form-control">
+                                <input name='name' type="text" id="simpleinput" class="form-control">
                                 <button class="btn btn-success mt-3"><?php echo $submit; ?></button>
                             </form>
                         </div>
