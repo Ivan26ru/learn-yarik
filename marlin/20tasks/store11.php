@@ -6,4 +6,4 @@ $pdo = new PDO('mysql:host=MySQL-8.4;dbname=task_11', 'root', '');
 $sql = "INSERT INTO `text` (`name`) VALUES (:name)";
 $statement = $pdo->prepare($sql);
 $statement->execute($dataPost);
-//header("Location: /marlin/pdoBase/projectStart/");
+header("Location: /marlin/20tasks/task_11.php");
