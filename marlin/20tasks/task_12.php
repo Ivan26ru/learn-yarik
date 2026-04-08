@@ -32,35 +32,24 @@
                             data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
                 </div>
             </div>
-            <?php
-            $items=[
-                    [
-                            'password'=>'Password',
-                            'email'=>'Email',
-                            'error'=>'Этот эл адрес уже занят другим пользователем,',
-                            'submit'=>'Submit',
-                    ],
-            ];
-            ?>
+            <
             <div class="panel-container show">
                 <div class="panel-content">
                     <div class="panel-content">
                         <div class="form-group">
-                            <?php foreach ($items as $item) { ?>
                                 <div class="alert alert-danger fade show" role="alert">
-                                    <?php echo $item['error']; ?>
+                                   Этот эл адрес уже занят другим пользователем
                                 </div>
 
-                            <form action="task_11_handler.php" method="post">
+                            <form action="" method="post">
                                 <div class="form-group">
-                                    <label class="form-label" for="simpleinput"><?php echo $item['email']?></label>
+                                    <label class="form-label" for="simpleinput">Email</label>
                                     <input type="text" name="email" id="simpleinput" class="form-control">
                                 </div>
 
-                                <label class="form-label" for="simpleinput"><?php echo $item['password']?></label>
+                                <label class="form-label" for="simpleinput">Password</label>
                                 <input type="password" name="password" id="simpleinput" class="form-control">
-                                <button class="btn btn-success mt-3"><?php echo $item['submit']?></button>
-                                <?php  } ?>
+                                <button class="btn btn-success mt-3">Submit</button>
                             </form>
                         </div>
                     </div>
