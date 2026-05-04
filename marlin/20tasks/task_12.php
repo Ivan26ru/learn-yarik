@@ -41,7 +41,7 @@
                                    Этот эл адрес уже занят другим пользователем
                                 </div>
 
-                            <form action="" method="post">
+                            <form action="store12.php" method="post">
                                 <div class="form-group">
                                     <label class="form-label" for="simpleinput">Email</label>
                                     <input type="text" name="email" id="simpleinput" class="form-control">
