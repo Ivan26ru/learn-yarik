@@ -14,10 +14,10 @@ $checkEmail = $statement->fetch(PDO::FETCH_ASSOC);
 if ($checkEmail) {
     echo "Пользователь есть ";
 }else{
-    echo "Пользователя нет ";
+//    echo "Пользователя нет ";
+    $sql = "INSERT INTO `task_12` (`email`,`password`) VALUES (:email,:password)";
+    $statement = $pdo->prepare($sql);
+    $statement->execute($dataPost);
+    header("Location:/marlin/20tasks/task_12.php");
 }
-var_dump($checkEmail);
-//$sql = "INSERT INTO `task_12` (`email`,`password`) VALUES (:email,:password)";
-//$statement = $pdo->prepare($sql);
-//$statement->execute($dataPost);
-//header("Location:/marlin/20tasks/task_12.php");
+//var_dump($checkEmail);

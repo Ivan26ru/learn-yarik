@@ -32,7 +32,6 @@
                             data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
                 </div>
             </div>
-            <
             <div class="panel-container show">
                 <div class="panel-content">
                     <div class="panel-content">
