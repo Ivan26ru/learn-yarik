@@ -3,7 +3,7 @@ class Person
 {
     public $name;
     public $age;
-
+  const ID = 5;
     public function __construct($name, $age) {
         $this->name = $name;
         $this->age = $age;
@@ -29,7 +29,4 @@ $myPerson = new Person('Rahim',14);
 $myPerson2 = new Person('Alisa',10);
 
 
-echo $myPerson->name;
-echo $myPerson->age;
-echo $myPerson2->name;
-echo $myPerson2->age;
+echo $myPerson : :ID;
