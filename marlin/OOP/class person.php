@@ -18,7 +18,7 @@ class Person
     {
         return 'Привет я ' . $this->name
             . ' мне  ' . $this->sayAge()
-            . ' мой номер телефона' . $this->telefon;
+            . ' мой номер телефона' . $this->telefon . '<br>';
     }
 
     public function setName($name)
@@ -30,9 +30,12 @@ class Person
     {
         return $this->age;//14
     }
-
+    public function setTelefon($telefon){
+        $this->telefon = $telefon;
+    }
 
 }
+
 
 
 $yarik = new Person('Ярик', 10, 79064685555);
@@ -40,6 +43,10 @@ $maksim = new Person('Максим', 10, 79064685889);
 $gena = new Person('Гена', 10, 78063409);
 var_dump($yarik);
 var_dump($maksim);
-echo $yarik->sayHello() . '</br>';
-echo $maksim->sayHello() . '</br>';
+echo $yarik->sayHello() ;
+echo $maksim->sayHello() ;
 echo $gena->sayHello();
+$gena->setName('гигиена');
+echo $gena->sayHello();
+$maksim->setTelefon('78907329');
+echo $maksim->sayHello() ;
