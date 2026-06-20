@@ -33,7 +33,10 @@ class Person
     public function setTelefon($telefon){
         $this->telefon = $telefon;
     }
-
+    public function sayAll()
+    {
+       return 'Привет всем я ' .$this->name . '<br>';
+    }
 }
 
 
@@ -50,3 +53,4 @@ $gena->setName('гигиена');
 echo $gena->sayHello();
 $maksim->setTelefon('78907329');
 echo $maksim->sayHello() ;
+echo $gena->sayAll();
