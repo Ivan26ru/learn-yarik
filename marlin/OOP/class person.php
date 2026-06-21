@@ -5,20 +5,23 @@ class Person
     public $name;
     public $age;
     public $telefon;
+    public $address;
     const ID = 5;
 
-    public function __construct($name, $age, $telefon)
+    public function __construct($name, $age, $telefon, $address)
     {
         $this->name = $name;
         $this->age = $age;
         $this->telefon = $telefon;
+//        $this->address = $address;
     }
 
     public function sayHello()
     {
         return 'Привет я ' . $this->name
             . ' мне  ' . $this->sayAge()
-            . ' мой номер телефона' . $this->telefon . '<br>';
+            . ' мой номер телефона' . $this->telefon
+            . 'мой адресс '. $this->address .'<br>';
     }
 
     public function setName($name)
@@ -37,6 +40,10 @@ class Person
     {
        return 'Привет всем я ' .$this->name . '<br>';
     }
+    public function setAddress($address){
+        $this->address = $address;
+    }
+
 }
 
 
