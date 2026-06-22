@@ -3,9 +3,9 @@
 class Person
 {
     public string $name; // свойство с типом string
-    public $age; // свойства
-    public $telefon; // свойства
-    public $address; // свойства
+    public        $age; // свойства
+    public        $telefon; // свойства
+    public        $address; // свойства
     const ID = 5; // константа, ее менять нельзя
 
     /**
@@ -20,8 +20,8 @@ class Person
         // присваиваем параметры нашим свойствам
         // параметры и свойства могут назваться по разному
         // или присваиваться по разному
-        $this->name = $name;
-        $this->age = $vozrast;
+        $this->name    = $name;
+        $this->age     = $vozrast;
         $this->telefon = $telefon;
         $this->address = $address;
     }
@@ -37,7 +37,7 @@ class Person
         return 'Привет я ' . $this->name
             . ' мне  ' . $this->sayAge()
             . ' мой номер телефона' . $this->telefon
-            . 'мой адрес '. $this->address .'<br>';
+            . 'мой адрес ' . $this->address . '<br>';
     }
 
     /**
@@ -53,31 +53,49 @@ class Person
     {
         return $this->age;//14
     }
-    public function setTelefon($telefon){
+
+    public function setTelefon($telefon)
+    {
         $this->telefon = $telefon;
     }
+
     public function sayAll()
     {
-       return 'Привет всем я ' .$this->name . '<br>';
+        return 'Привет всем я ' . $this->name . '<br>';
     }
-    public function setAddress($address){
+
+    public function setAddress($address)
+    {
         $this->address = $address;
     }
 
+
+    /**
+     * Метод, который принимает в качестве параметра другой экземпляр объекта Person
+     */
+    public function addMyFriend(Person $person): string
+    {
+        return 'Меня зовут ' . $this->name
+            . ' и у меня есть друг, которого зовут ' . $person->name . '. '
+            . 'Он живет по адресу ' . $person->address
+            . '</br>'
+            . $person->sayHello();
+    }
 }
 
 
+$yarik  = new Person('Ярик', 10, 79064685555, 'пушкино 23');
+$maksim = new Person('Максим', 10, 79064685889, 'ленина 239');
+$gena   = new Person('Гена', 10, 78063409, 'ленина 4');
 
-$yarik = new Person('Ярик', 10, 79064685555,'пушкино 23');
-$maksim = new Person('Максим', 10, 79064685889,'ленина 239');
-$gena = new Person('Гена', 10, 78063409,'ленина 4');
-var_dump($yarik);
-var_dump($maksim);
-echo $yarik->sayHello() ;
-echo $maksim->sayHello() ;
-echo $gena->sayHello();
-$gena->setName('гигиена');
-echo $gena->sayHello();
-$maksim->setTelefon('78907329');
-echo $maksim->sayHello() ;
-echo $gena->sayAll();
+echo $yarik->addMyFriend($gena);
+//var_dump($yarik);
+//var_dump($maksim);
+//echo $yarik->sayHello() ;
+//echo $maksim->sayHello() ;
+//echo $gena->sayHello();
+//$gena->setName('гигиена');
+//echo $gena->sayHello();
+//$maksim->setTelefon('78907329');
+//echo $maksim->sayHello() ;
+//echo $gena->sayAll();
