@@ -44,7 +44,7 @@ class Person
      * Метод ни чего не возвращает
      * поэтому стоит :void
      */
-    public function setName($name): void
+    public function setName(string $name): void
     {
         $this->name = $name; // Rahim
     }
