@@ -13,7 +13,7 @@ class Person
         $this->name = $name;
         $this->age = $age;
         $this->telefon = $telefon;
-//        $this->address = $address;
+        $this->address = $address;
     }
 
     public function sayHello()
@@ -21,7 +21,7 @@ class Person
         return 'Привет я ' . $this->name
             . ' мне  ' . $this->sayAge()
             . ' мой номер телефона' . $this->telefon
-            . 'мой адресс '. $this->address .'<br>';
+            . 'мой адрес '. $this->address .'<br>';
     }
 
     public function setName($name)
@@ -48,9 +48,9 @@ class Person
 
 
 
-$yarik = new Person('Ярик', 10, 79064685555);
-$maksim = new Person('Максим', 10, 79064685889);
-$gena = new Person('Гена', 10, 78063409);
+$yarik = new Person('Ярик', 10, 79064685555,'пушкино 23');
+$maksim = new Person('Максим', 10, 79064685889,'ленина 239');
+$gena = new Person('Гена', 10, 78063409,'ленина 4');
 var_dump($yarik);
 var_dump($maksim);
 echo $yarik->sayHello() ;
