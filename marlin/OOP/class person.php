@@ -2,21 +2,37 @@
 
 class Person
 {
-    public $name;
-    public $age;
-    public $telefon;
-    public $address;
-    const ID = 5;
+    public string $name; // свойство с типом string
+    public $age; // свойства
+    public $telefon; // свойства
+    public $address; // свойства
+    const ID = 5; // константа, ее менять нельзя
 
-    public function __construct($name, $age, $telefon, $address)
+    /**
+     * Метод, который вызывается при создании класса,
+     * То есть new Person(...) - вызовет метод __construct
+     *
+     * $name, $vozrast, $telefon, $address - это параметры
+     * $this->name - это свойства класса (начинается с $this)
+     */
+    public function __construct($name, $vozrast, $telefon, $address)
     {
+        // присваиваем параметры нашим свойствам
+        // параметры и свойства могут назваться по разному
+        // или присваиваться по разному
         $this->name = $name;
-        $this->age = $age;
+        $this->age = $vozrast;
         $this->telefon = $telefon;
         $this->address = $address;
     }
 
-    public function sayHello()
+    // все строчки в которые есть function - это методы класса
+
+    /**
+     * Метод возвращает строку
+     * поэтому стоит :string
+     */
+    public function sayHello(): string
     {
         return 'Привет я ' . $this->name
             . ' мне  ' . $this->sayAge()
@@ -24,7 +40,11 @@ class Person
             . 'мой адрес '. $this->address .'<br>';
     }
 
-    public function setName($name)
+    /**
+     * Метод ни чего не возвращает
+     * поэтому стоит :void
+     */
+    public function setName($name): void
     {
         $this->name = $name; // Rahim
     }
