@@ -5,7 +5,8 @@ class Person
     public string $name; // свойство с типом string
     public        $age; // свойства
     public        $telefon; // свойства
-    public        $address; // свойства
+    public        $address;// свойства
+    public        $pol;// свойства
     const ID = 5; // константа, ее менять нельзя
 
     /**
@@ -15,7 +16,7 @@ class Person
      * $name, $vozrast, $telefon, $address - это параметры
      * $this->name - это свойства класса (начинается с $this)
      */
-    public function __construct($name, $vozrast, $telefon, $address)
+    public function __construct($name, $vozrast, $telefon, $address, $pol)
     {
         // присваиваем параметры нашим свойствам
         // параметры и свойства могут назваться по разному
@@ -24,6 +25,7 @@ class Person
         $this->age     = $vozrast;
         $this->telefon = $telefon;
         $this->address = $address;
+        $this->pol= $pol;
     }
 
     // все строчки в которые есть function - это методы класса
@@ -37,7 +39,9 @@ class Person
         return 'Привет я ' . $this->name
             . ' мне  ' . $this->sayAge()
             . ' мой номер телефона' . $this->telefon
-            . 'мой адрес ' . $this->address . '<br>';
+            . 'мой адрес ' . $this->address
+            . ' я '. $this->pol .'<br>';
+
     }
 
     /**
@@ -68,7 +72,9 @@ class Person
     {
         $this->address = $address;
     }
-
+     public function sayPol($pol){
+        $this->pol = $pol;
+     }
 
     /**
      * Метод, который принимает в качестве параметра другой экземпляр объекта Person
@@ -84,9 +90,9 @@ class Person
 }
 
 
-$yarik  = new Person('Ярик', 10, 79064685555, 'пушкино 23');
-$maksim = new Person('Максим', 10, 79064685889, 'ленина 239');
-$gena   = new Person('Гена', 10, 78063409, 'ленина 4');
+$yarik  = new Person('Ярик', 10, 79064685555, 'пушкино 23' , 'мальчик');
+$maksim = new Person('Максим', 10, 79064685889, 'ленина 239' , 'мальчик');
+$gena   = new Person('Гена', 10, 78063409, 'ленина 4', 'мальчик');
 
 echo $yarik->addMyFriend($gena);
 //var_dump($yarik);
