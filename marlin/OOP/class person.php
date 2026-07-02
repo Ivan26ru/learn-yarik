@@ -7,6 +7,9 @@ class Person
     public        $telefon; // свойства
     public        $address;// свойства
     public        $pol;// свойства
+    public        $author;
+    public         $year;
+    public $price;
     const ID = 5; // константа, ее менять нельзя
 
     /**
@@ -75,6 +78,13 @@ class Person
      public function sayPol($pol){
         $this->pol = $pol;
      }
+     public function setBook($author, $year, $price)
+     {
+         $this->author = $author;
+         $this->year = $year;
+         $this->price = $price;
+     }
+
 
     /**
      * Метод, который принимает в качестве параметра другой экземпляр объекта Person
@@ -87,6 +97,13 @@ class Person
             . '</br>'
             . $person->sayHello();
     }
+    public function sellBook(Person $person): string
+    {
+       return 'автор ' . $this->author.
+           ' год книги ' . $this->year.
+           ' цена '. $this->price
+           . '<br>'. $person->sayHello();
+    }
 }
 
 
@@ -94,7 +111,8 @@ $yarik  = new Person('Ярик', 10, 79064685555, 'пушкино 23' , 'мал�
 $maksim = new Person('Максим', 10, 79064685889, 'ленина 239' , 'мальчик');
 $gena   = new Person('Гена', 10, 78063409, 'ленина 4', 'мальчик');
 
-echo $yarik->addMyFriend($gena);
+$yarik->setBook('А.С.Пушкин', '1960', '1600');
+echo $yarik->sellBook($yarik) ;
 //var_dump($yarik);
 //var_dump($maksim);
 //echo $yarik->sayHello() ;
