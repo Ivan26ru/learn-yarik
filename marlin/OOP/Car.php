@@ -76,5 +76,5 @@ echo $yarikCar->infoCar();
 $yarikCar->updateColor('Синий');
 echo $yarikCar->infoCar();
 
-$yarikCar->updateAge(false);
+$yarikCar->updateAge(5);
 echo $yarikCar->infoCar();
