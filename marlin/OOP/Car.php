@@ -5,10 +5,17 @@ class Car
 {
     public string $brand;
     public string $model;
+    /**
+     * Возможные значения без типа:
+     * 3 - число (когда поставили int, тогда будет только число)
+     * "3 года" - строка
+     * [3, 11] - 3 года 11 месяцев - массив
+     * false - булевое значение (например false - старая, true - новая)
+     * Когда указываем тип, то вариантов становится меньше
+     */
     public int $age;
     public int $price;
     public string $color;
-    const ID = 6;
 
 
     public function __construct(
@@ -24,6 +31,23 @@ class Car
         $this->age = $age;
         $this->price = $price;
         $this->color = $color;
+    }
+
+    /**
+     * Пример метода с типизацией
+     */
+    public function updateColor(string $color): void
+    {
+        $this->color = $color;
+    }
+
+    /**
+     * Пример метода без типизации
+     * (так лучше не делать)
+     */
+    public function updateAge($newAge)
+    {
+        $this->age = $newAge;
     }
 
     public function infoCar(): string
@@ -44,9 +68,13 @@ class Car
     }
 }
 
-$yarik = new Car('Бмв ', 'x5m90', 1,  560000, 'черный');
-$haval = new Car('Haval','f7x',3,160000,'серый');
-echo $yarik->infoCar();
-echo $haval->infoCar();
-echo $haval->sayYear() ;
-echo $yarik->getYear() +5;
+$yarikCar = new Car('Бмв ', 'x5m90', 1,  560000, 'черный');
+$haval    = new Car('Haval','f7x',3,160000,'серый');
+
+echo $yarikCar->infoCar();
+
+$yarikCar->updateColor('Синий');
+echo $yarikCar->infoCar();
+
+$yarikCar->updateAge(5);
+echo $yarikCar->infoCar();
