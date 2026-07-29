@@ -30,3 +30,4 @@ class Book
     }
 }
 $book = new Book('А.С.Пушкин', 1965, 234, "хорошее");
+echo $book->getBook();
