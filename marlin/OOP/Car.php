@@ -93,7 +93,7 @@ echo $audi->maxSpeed();
 $audi->updateColor('green');
 
 $yarikCar = new Car('Бмв ', 'x5m90', 1,  560000, 'черный');
-$yarikCar->
+
 //$haval    = new Car('Haval','f7x',3,160000,'серый');
 //
 //echo $yarikCar->infoCar();
