@@ -68,13 +68,38 @@ class Car
     }
 }
 
+//это пример дочернего класса
+class SportCar extends Car
+{
+    /**
+     * Переопределить родительский метод
+     */
+    public function infoCar(): string
+ {
+     return $this->brand . ' это супер кар';
+ }
+
+    /**
+     * Добавить новый метод в дочерний класс
+     */
+    public function maxSpeed(): int{
+     return  370 ;
+ }
+}
+$audi= new SportCar('Audi', 'RS6', 1, 1200000, 'black');
+
+echo $audi->infoCar();
+echo $audi->maxSpeed();
+$audi->updateColor('green');
+
 $yarikCar = new Car('Бмв ', 'x5m90', 1,  560000, 'черный');
-$haval    = new Car('Haval','f7x',3,160000,'серый');
-
-echo $yarikCar->infoCar();
-
-$yarikCar->updateColor('Синий');
-echo $yarikCar->infoCar();
-
-$yarikCar->updateAge(5);
-echo $yarikCar->infoCar();
+$yarikCar->
+//$haval    = new Car('Haval','f7x',3,160000,'серый');
+//
+//echo $yarikCar->infoCar();
+//
+//$yarikCar->updateColor('Синий');
+//echo $yarikCar->infoCar();
+//
+//$yarikCar->updateAge(5);
+//echo $yarikCar->infoCar();
