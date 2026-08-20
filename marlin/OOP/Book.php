@@ -28,6 +28,13 @@ class Book
             ' состояние ' . $this->states .
             '<br>' ;
     }
+    public function updateStates(string $states): void
+    {
+        $this->states = $states;
+    }
+
 }
+
 $book = new Book('А.С.Пушкин', 1965, 234, "хорошее");
 echo $book->getBook();
+echo $book->updateStates('плохое');
