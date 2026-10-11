@@ -33,8 +33,9 @@ function treygolinlk(int $a, int $b, int $c)
 echo treygolinlk(10,56, 10) . "<br>";
 
 
-function vsegoDeneg(int $a, int $b, int $c, int $d)
+function vsegoDeneg(int $sunday, int $monday, int $tuesday, int $wednesday)
 {
-    return $a + $b + $c + $d;
+    return $sunday + $monday + $tuesday + $wednesday;
 }
 echo vsegoDeneg(600, 512, 903, 493) . "<br>";
+//ошибка в том что были при вводе я написал две одинаковых буквы
