@@ -35,6 +35,6 @@ echo treygolinlk(10,56, 10) . "<br>";
 
 function vsegoDeneg(int $a, int $b, int $c, int $d)
 {
-    return $a + $d + $c + $d;
+    return $a + $b + $c + $d;
 }
 echo vsegoDeneg(600, 512, 903, 493) . "<br>";
