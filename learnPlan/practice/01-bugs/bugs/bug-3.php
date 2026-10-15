@@ -4,7 +4,7 @@
 
 function discount(string $name, int $age): string
 {
-    if ($age < 14) {
+    if ($age <= 14) {
         return $name . " " . $age . " — скидка есть. ";
     } else {
         return $name . " " . $age . " — скидки нет. ";
@@ -14,3 +14,4 @@ function discount(string $name, int $age): string
 echo discount("Ярику", 11);
 echo discount("Маше", 14);
 echo discount("Пете", 15);
+//ошибка была в том что 14 лет не были вклюсителбно
