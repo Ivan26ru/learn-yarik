@@ -1,57 +1,58 @@
 <?php
 
-$person = [
+$countries = [
     "strana" => "Amerika",
-    " strana2" => "Egypt",
-    " strana3" => "China",
-    " strana4" => "Japan",
+    "strana2" => "Egypt",
+    "strana3" => "China",
+    "strana4" => "Japan",
 ];
-$person2 = [
+$pets = [
     "pet" => "dog",
     "pet2" => "cat",
     "pet3" => "hamster",
     "pet4" => "Raccoon",
 ];
-$person3 = [
+$friends = [
         "friend" => "Maxim",
         "friend2" => "Gena",
         "friend3" => "Ahmed",
     ];
- echo $person["strana"];
+ echo $countries["strana"];
  echo "<br>";
- echo $person[" strana2"];
+ echo $countries["strana2"];
  echo "<br>";
-  echo $person[" strana3"];
+  echo $countries["strana3"];
   echo "<br>";
-   echo $person[" strana4"];
+   echo $countries["strana4"];
    echo "<br>";
 
-   echo $person2["pet"];
+   echo $pets["pet"];
    echo "<br>";
-   echo $person2["pet2"];
+   echo $pets["pet2"];
    echo "<br>";
-   echo $person2["pet3"];
+   echo $pets["pet3"];
    echo "<br>";
-   echo $person2["pet4"];
+   echo $pets["pet4"];
    echo "<br>";
-   echo $person3["friend"];
+   echo $friends["friend"];
    echo "<br>";
-   echo $person3["friend2"];
+   echo $friends["friend2"];
    echo "<br>";
-   echo $person3["friend3"];
+   echo $friends["friend3"];
    echo "<br>";
 
 
 
-   foreach ($person as $person)
+   foreach ($countries as $country)
    {
-       echo $person.PHP_EOL;
+       echo $country.PHP_EOL;
    }
-   foreach ($person2 as $person2)
+
+   foreach ($pets as $pet)
 {
-    echo $person2.PHP_EOL;
+    echo $pet .PHP_EOL;
 }
-    foreach ($person3 as $person3)
+    foreach ($friends as $friend)
 {
-    echo $person3.PHP_EOL;
+    echo $friend.PHP_EOL;
 }
