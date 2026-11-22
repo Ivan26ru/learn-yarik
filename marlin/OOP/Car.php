@@ -61,7 +61,7 @@ class Car
             '<br>';
     }
     public function getYear(): int{
-        return 2026-$this->age;
+        return date('Y')-$this->age;
     }
     public function sayYear(): string{
         return $this->getYear()."год " ;
