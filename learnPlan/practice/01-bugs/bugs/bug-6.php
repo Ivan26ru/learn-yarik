@@ -13,7 +13,7 @@ class Car
 
     public function getColor(): string
     {
-        $this->color;
+        return $this->color;
     }
 }
 
