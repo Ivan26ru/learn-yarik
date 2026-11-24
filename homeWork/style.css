@@ -308,3 +308,29 @@ body {
 .hover-span:hover {
     color: red;
 }
+
+.transform{
+}
+
+.transform{
+    transform: scale(1.9);
+
+}
+
+.razmer{
+    border: 1px solid #000000;
+    color: #9fcb3d;
+    font-size: 15px ;
+border:#e3f2fd;
+}
+.flex-block_{
+    justify-content:flex-start;
+    display:flex;
+}
+.item {
+    background: #4a90e2;
+    color: white;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+}
