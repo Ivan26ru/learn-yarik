@@ -85,6 +85,19 @@ class SportCar extends Car
     public function maxSpeed(): int{
      return  370 ;
  }
+    public function getPrice(): int
+    {
+        return $this->price;
+    }
+
+    public function setPrice(int $price): bool
+    {
+        if ($price <= 0) {
+            return false; // не меняем, сообщаем, что не получилось
+        }
+        $this->price = $price;
+        return true;
+    }
 }
 $audi= new SportCar('Audi', 'RS6', 1, 1200000, 'black');
 
@@ -103,3 +116,4 @@ $yarikCar = new Car('Бмв ', 'x5m90', 1,  560000, 'черный');
 //
 //$yarikCar->updateAge(5);
 //echo $yarikCar->infoCar();
+var_dump($yarikCar->setPrice(-500));

@@ -29,8 +29,13 @@ class Pet
         $this->hunger = $hunger;
     }
 
+    public function feed(): int{
+        $this->hunger = max(0, $this->hunger - 3);
+    }
+
 }
 
 $Tamagotchi = new Pet('Туча ', 1 , 7);
 echo $Tamagotchi->getTamagotchi();
-s $Tamagotchi->upgredeHunger(2);
+ $Tamagotchi->upgredeHunger(2);
+
