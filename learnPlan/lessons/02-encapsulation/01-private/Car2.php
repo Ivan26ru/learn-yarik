@@ -85,6 +85,19 @@ class SportCar extends Car
     public function maxSpeed(): int{
      return  370 ;
  }
+    public function getPrice(): int
+    {
+        return $this->price;
+    }
+
+    public function setPrice(int $price): bool
+    {
+        if ($price <= 0) {
+            return false; // не меняем, сообщаем, что не получилось
+        }
+        $this->price = $price;
+        return true;
+    }
 
 
 }
